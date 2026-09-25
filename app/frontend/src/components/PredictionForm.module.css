@@ -1,0 +1,15 @@
+.form { display: grid; gap: 1.5rem; }
+.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.field { display: grid; gap: 0.4rem; }
+.field label { font-weight: 700; }
+.field input { width: 100%; border: 1px solid var(--color-border); border-radius: var(--radius-sm); background: var(--color-surface); color: var(--color-text); padding: 0.7rem 0.8rem; }
+.field input[aria-invalid="true"] { border-color: #c94444; }
+.hint, .configNotice { color: var(--color-muted); font-size: 0.86rem; font-weight: 400; }
+.error { margin: 0; color: #b52d2d; font-size: 0.85rem; }
+.actions { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; }
+.actions button { min-height: 2.7rem; border-radius: var(--radius-sm); padding: 0.6rem 1rem; cursor: pointer; }
+.actions button:disabled { cursor: not-allowed; opacity: 0.6; }
+.primaryButton { display: inline-flex; gap: 0.5rem; align-items: center; border: 0; background: var(--color-primary); color: #fff; }
+.secondaryButton { border: 1px solid var(--color-border); background: var(--color-surface); color: var(--color-text); }
+.ghostButton { border: 0; background: transparent; color: var(--color-primary-strong); }
+@media (max-width: 640px) { .grid { grid-template-columns: 1fr; } .actions { align-items: stretch; flex-direction: column; } .actions button { width: 100%; } }

@@ -5,15 +5,26 @@ services:
       context: ./ai-models/service
     ports:
       - "${AI_SERVICE_PORT:-8001}:8001"
+    depends_on:
+      - mongodb
 
   backend:
     build:
       context: ./app/backend
+      args:
+        PORT: ${BACKEND_PORT:-8000}
+    env_file:
+      - .env
     ports:
-      - "${BACKEND_PORT:-8000}:8000"
+      - "${BACKEND_PORT:-8000}:${BACKEND_PORT:-8000}"
     environment:
+      PORT: ${BACKEND_PORT:-8000}
+      NODE_ENV: ${NODE_ENV:-production}
       AI_SERVICE_URL: http://ai-service:8001
-      MONGODB_URI: ${MONGODB_URI}
+      MONGODB_URI: mongodb://mongodb:27017/fuel_consumption
+      AI_SERVICE_TIMEOUT_MS: ${AI_SERVICE_TIMEOUT_MS:-10000}
+      CORS_ORIGIN: ${CORS_ORIGIN:-http://localhost:3000}
+      LOG_LEVEL: ${LOG_LEVEL:-info}
     depends_on:
       - ai-service
       - mongodb
@@ -21,10 +32,14 @@ services:
   frontend:
     build:
       context: ./app/frontend
+      args:
+        NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL}
+        NEXT_PUBLIC_REQUEST_TIMEOUT_MS: ${NEXT_PUBLIC_REQUEST_TIMEOUT_MS:-15000}
     ports:
       - "${FRONTEND_PORT:-3000}:3000"
     environment:
       NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL}
+      NEXT_PUBLIC_REQUEST_TIMEOUT_MS: ${NEXT_PUBLIC_REQUEST_TIMEOUT_MS:-15000}
     depends_on:
       - backend
 
