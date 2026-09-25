@@ -1,0 +1,481 @@
+Total Paragraphs: 540
+Total Tables: 4
+
+P001 [Normal]: Nhận xét của giảng viên hướng dẫn:
+P002 [Normal]: ......................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+P003 [Normal]: ......................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+P004 [Normal]: .....................................................................................................................................................................................................................................................................................................................................................................................................................
+P006 [Normal]: Ký và ghi họ tên
+P007 [Normal]: LỜI CAM ĐOAN
+P008 [Tên đề tài]: Em xin cam đoan bài tập lớn môn học Học máy cơ bản có tên là “Xây dựng hệ thống đề xuất phim” là sản phẩm của nhóm chúng em. Những phần sử dụng tài liệu tham khảo trong bài tập lớn đã được nêu rõ trong phần tài liệu tham khảo. Các số liệu, kết quả trình bày trong bài tập lớn là hoàn toàn trung thực, nếu sai em xin chịu hoàn toàn trách nhiệm và chịu mọi kỷ luật của bộ môn và nhà trường đề ra.
+P009 [Normal (Web)]: Hưng yên, ngày 5 tháng 1 năm 2026
+P010 [Normal (Web)]: Sinh viên thực hiện
+P012 [Normal]: Mai Hoàng Anh
+P013 [Normal]: Nguyễn Tuấn Anh
+P017 [Normal]: LỜI CÁM ƠN
+P018 [Normal (Web)]: Để có thể hoàn thành bài tập lớn này, lời đầu tiên em xin phép gửi lời cảm ơn tới Khoa Công nghệ thông tin – Trường Đại học Sư phạm Kỹ thuật Hưng Yên đã tạo điều kiện thuận lợi cho em thực hiện đề tài môn học này.
+P019 [Normal (Web)]: Mặc dù em đã có cố gắng, nhưng với trình độ còn hạn chế, trong quá trình thực hiện đề tài không tránh khỏi những thiếu sót. Em hy vọng sẽ nhận được những ý kiến nhận xét, góp ý của các Thầy cô về những kết quả triển khai trong bài tập lớn.
+P020 [Normal (Web)]: Em xin trân trọng cảm ơn!
+P023 [Tiêu đề]: DANH SÁCH TỪ VIẾT TẮT
+P030 [Tiêu đề]: DANH SÁCH HÌNH ẢNH
+P031 [table of figures]: Hình 2. 1: Machine Learning	16
+P032 [table of figures]: Hình 2. 2: Cách hoạt động của Machine Learning	18
+P033 [table of figures]: Hình 2. 3: Machine Learning có giám sát	19
+P034 [table of figures]: Hình 2. 4: Machine Learning không giám sát	20
+P035 [table of figures]: Hình 2. 5: Machine Learning bán giám sát	21
+P036 [table of figures]: Hình 2. 6: Các ứng dụng Machine Learning trong thực tiễn	22
+P037 [table of figures]: Hình 2. 7: KNN (K-Nearest Neighbors)	26
+P038 [table of figures]: Hình 2. 8 Matrix Factorization	31
+P039 [table of figures]: Hình 3. 1 Tổng quan 3 bộ dữ liệu user-movie-rating	38
+P040 [table of figures]: Hình 3. 2 Biểu đồ phân bố điểm trung bình của phim	40
+P041 [table of figures]: Hình 3. 3 Biểu đồ Boxplot phân bố điểm rating của người dùng	42
+P042 [table of figures]: Hình 3. 4 Biểu đồ phân số lượng đánh giá theo từng mức rating	43
+P043 [table of figures]: Hình 3. 5 Mối quan hệ giữa độ phổ biến và điểm đánh giá trung bình của phim	44
+P044 [table of figures]: Hình 3.6 Biểu đồ phân số lần rating của người dùng ( rating>10)	46
+P045 [table of figures]: Hình 3. 7 Phân tích, kiểm tra và xử lý dữ liệu	48
+P046 [table of figures]: Hình 4. 1 Chia tập train test 80 20	53
+P047 [table of figures]: Hình 4. 2 Chia user cho train test	53
+P048 [table of figures]: Hình 4. 3 Mô hình train test KNN MF chưa xử lý mất cân bằng dữ liệu	54
+P049 [table of figures]: Hình 4. 4 Mô hình train test Logistic Regresion đã xử lý mất cân bằng dữ liệu	54
+P050 [table of figures]: Hình 4. 8 Huấn luyện mô hình	55
+P051 [table of figures]: Hình 4. 9 KNN trên tập validation	57
+P052 [Heading 1]: TỔNG QUAN VỀ ĐỀ TÀI
+P053 [Mục lớn]: Lý do chọn đề tài
+P054 [Nội dung]: Trong bối cảnh công nghệ số phát triển mạnh mẽ, số lượng phim ảnh và nội dung giải trí trực tuyến ngày càng gia tăng nhanh chóng cả về quy mô lẫn thể loại. Người dùng hiện nay phải đối mặt với một “biển” thông tin khổng lồ, khiến việc tìm kiếm và lựa chọn những bộ phim phù hợp với sở thích cá nhân trở nên khó khăn, tốn nhiều thời gian và công sức. Chính vì vậy, nhu cầu về các hệ thống hỗ trợ đề xuất nội dung thông minh ngày càng trở nên cấp thiết.
+P055 [Nội dung]: Hệ thống đề xuất phim ra đời nhằm giải quyết bài toán trên bằng cách phân tích hành vi, sở thích và lịch sử xem phim của người dùng để đưa ra các gợi ý phù hợp. Việc cá nhân hóa trải nghiệm giúp người dùng nhanh chóng tiếp cận được những nội dung họ quan tâm, từ đó nâng cao mức độ hài lòng, tăng thời gian sử dụng dịch vụ và cải thiện trải nghiệm tổng thể trên các nền tảng xem phim trực tuyến.
+P056 [Nội dung]: Bên cạnh giá trị đối với người dùng, hệ thống đề xuất phim còn đóng vai trò quan trọng đối với các nhà cung cấp dịch vụ. Các nền tảng lớn như Netflix, YouTube, Amazon Prime Video đã và đang triển khai rộng rãi các mô hình đề xuất nhằm giữ chân người dùng, tối ưu hóa nội dung phân phối và nâng cao hiệu quả kinh doanh. Điều này cho thấy bài toán đề xuất không chỉ mang tính lý thuyết mà còn có tính ứng dụng thực tiễn rất cao trong các hệ thống thực tế.
+P057 [Nội dung]: Về mặt học thuật, đề tài “Xây dựng hệ thống đề xuất phim” là một hướng nghiên cứu phù hợp để áp dụng và củng cố các kiến thức nền tảng về xử lý dữ liệu, học máy và trí tuệ nhân tạo. Thông qua việc thu thập, tiền xử lý dữ liệu, xây dựng mô hình và đánh giá kết quả, đề tài cho phép kiểm chứng hiệu quả của các phương pháp đề xuất thông qua những tiêu chí rõ ràng như độ chính xác, độ bao phủ và mức độ hài lòng của người dùng.
+P058 [Nội dung]: Vì những lý do trên, việc nghiên cứu và xây dựng hệ thống đề xuất phim không chỉ có ý nghĩa quan trọng về mặt học thuật mà còn mang lại giá trị thực tiễn cao, đáp ứng nhu cầu ngày càng lớn của người dùng trong kỷ nguyên số.
+P060 [Mục lớn]: Mục tiêu của đề tài
+P061 [Heading 4]: 1.2.1. Mục tiêu tổng quát
+P062 [Normal (Web)]: Mục tiêu tổng quát của đề tài là nghiên cứu và xây dựng một hệ thống đề xuất phim nhằm cá nhân hóa trải nghiệm người dùng dựa trên sở thích và hành vi xem phim. Hệ thống được thiết kế để hỗ trợ người dùng lựa chọn nội dung phù hợp trong bối cảnh số lượng phim ngày càng đa dạng, đồng thời góp phần nâng cao hiệu quả khai thác và phân phối nội dung trên các nền tảng xem phim trực tuyến.
+P063 [Normal (Web)]: Thông qua việc áp dụng các kỹ thuật xử lý dữ liệu, học máy và trí tuệ nhân tạo, đề tài hướng tới việc xây dựng mô hình đề xuất có khả năng hoạt động hiệu quả trên dữ liệu thực tế, cho phép đánh giá chất lượng hệ thống thông qua các tiêu chí rõ ràng. Qua đó, đề tài không chỉ củng cố kiến thức lý thuyết mà còn rèn luyện kỹ năng thực hành, góp phần thu hẹp khoảng cách giữa nghiên cứu học thuật và ứng dụng thực tiễn
+P064 [Heading 4]: 1.2.2. Mục tiêu cụ thể
+P065 [List Paragraph]: Tìm hiểu các phương pháp xây dựng hệ thống đề xuất phim phổ biến hiện nay.
+P066 [List Paragraph]: Thu thập và tiền xử lý dữ liệu phục vụ cho việc xây dựng hệ thống đề xuất.
+P067 [List Paragraph]: Xây dựng và triển khai mô hình đề xuất phim nhằm cá nhân hóa trải nghiệm người dùng.
+P068 [List Paragraph]: Đánh giá kết quả đạt được và đề xuất hướng cải thiện hệ thống.
+P069 [Mục lớn]: Giới hạn và phạm vi của đề tài
+P070 [Heading 4]: 1.3.1. Đối tượng nghiên cứu
+P071 [Normal]: Đối tượng nghiên cứu của đề tài là bộ dữ liệu MovieLens-1M with Posters and Metadata, được thu thập từ nền tảng Kaggle. Đây là bộ dữ liệu phổ biến và có độ tin cậy cao, thường được sử dụng trong các nghiên cứu và ứng dụng về hệ thống đề xuất.
+P072 [Normal]: Bộ dữ liệu bao gồm các thành phần chính sau:
+P073 [Normal]: Dữ liệu người dùng (users.csv): cung cấp thông tin cơ bản về người dùng như mã người dùng, giới tính, độ tuổi, nghề nghiệp và khu vực sinh sống.
+P074 [Normal]: Dữ liệu phim (movies.csv): chứa thông tin về phim bao gồm mã phim, tên phim, thể loại, cùng các siêu dữ liệu bổ sung như hình ảnh poster và thông tin mô tả.
+P075 [Normal]: Dữ liệu đánh giá (ratings.csv): ghi nhận các đánh giá của người dùng đối với phim trên thang điểm từ 1 đến 5, phản ánh mức độ yêu thích của người dùng đối với từng bộ phim.
+P076 [Normal]: Với quy mô khoảng 1 triệu lượt đánh giá, hơn 6.000 người dùng và gần 4.000 bộ phim, bộ dữ liệu đáp ứng tốt yêu cầu nghiên cứu, xây dựng và đánh giá hiệu quả của hệ thống đề xuất phim trong phạm vi bài tập lớn.
+P077 [Normal]: Đặc điểm đối tượng:
+P078 [Normal]: Dữ liệu thực tế và có cấu trúc rõ ràng, được thu thập từ hệ thống đánh giá phim của người dùng, phù hợp cho bài toán xây dựng hệ thống đề xuất.
+P079 [Normal]: Quy mô dữ liệu lớn, bao gồm khoảng 1 triệu lượt đánh giá từ hơn 6.000 người dùng đối với gần 4.000 bộ phim, đảm bảo tính đa dạng và độ tin cậy trong quá trình huấn luyện mô hình.
+P080 [Normal]: Dữ liệu đa dạng về người dùng, cung cấp các thông tin như giới tính, độ tuổi và nghề nghiệp, hỗ trợ phân tích hành vi và sở thích người dùng.
+P081 [Normal]: Dữ liệu phim phong phú, bao gồm tên phim, thể loại và các siêu dữ liệu bổ sung như poster và thông tin mô tả, thuận lợi cho việc áp dụng các phương pháp đề xuất theo nội dung.
+P082 [Normal]: Dữ liệu đánh giá dạng định lượng, được biểu diễn trên thang điểm từ 1 đến 5, phản ánh mức độ yêu thích của người dùng đối với phim, phù hợp cho các thuật toán học máy.
+P083 [Normal]: Những đặc điểm trên cho phép bộ dữ liệu được sử dụng hiệu quả trong việc xây dựng, đánh giá và so sánh các mô hình đề xuất phim trong phạm vi bài tập lớn.
+P085 [Heading 4]: 1.3.2. Phạm vi nghiên cứu
+P086 [Normal]: Dữ liệu: Bộ dữ liệu từ Kaggle: https://www.kaggle.com/datasets/mohamedelmallah1/movielens-1m-with-posters-and-metadata?select=users.csv (Bộ dữ liệu này dựa trên bộ dữ liệu MovieLens 1M và bao gồm 1.000.209 đánh giá ẩn danh cho 3.706 bộ phim từ 6.040 người dùng).
+P087 [List Paragraph]: Biến mục tiêu:
+Mức độ yêu thích của người dùng đối với phim, được biểu diễn thông qua điểm đánh giá (rating) trên thang điểm từ 1 đến 5. Biến này dùng để dự đoán mức độ phù hợp giữa người dùng và phim, đồng thời phục vụ việc gợi ý danh sách phim phù hợp cho từng người dùng.
+P088 [List Paragraph]: Mô hình:
+Đề tài tập trung vào các phương pháp Collaborative Filtering, cụ thể:
+P089 [Normal]: KNN (K-Nearest Neighbors): sử dụng độ tương đồng giữa người dùng hoặc giữa các phim để đưa ra gợi ý, đóng vai trò mô hình cơ bản.
+P090 [Normal]: Matrix Factorization: áp dụng các kiến thức đại số tuyến tính (ma trận) để phân rã ma trận người dùng – phim, giúp mô hình học được đặc trưng tiềm ẩn và cải thiện chất lượng gợi ý.
+P091 [List Paragraph]: Ứng dụng:
+Hệ thống gợi ý phim được sử dụng để:Cá nhân hóa nội dung đề xuất cho người dùng.Giúp người dùng tiết kiệm thời gian tìm kiếm phim.Hỗ trợ các nền tảng xem phim trực tuyến nâng cao trải nghiệm người dùng, mang tính hỗ trợ và không phản ánh hoàn toàn sở thích người dùng trong mọi trường hợp.
+P092 [Normal]: Giới hạn:
+P093 [Normal]: Dữ liệu sử dụng là bộ MovieLens-1M, chủ yếu phản ánh hành vi người dùng tại thị trường nước ngoài, có thể chưa phản ánh đầy đủ sở thích và thói quen xem phim của người dùng Việt Nam.
+P094 [Normal]: Hệ thống gợi ý chỉ dựa trên dữ liệu đánh giá và lịch sử tương tác, không xét đến các yếu tố ngữ cảnh như tâm trạng, thời điểm xem hoặc xu hướng phim theo thời gian.
+P095 [Normal]: Mô hình chưa xử lý dữ liệu thời gian thực và chưa mở rộng cho các tập dữ liệu lớn hơn (big data) trong môi trường thực tế.
+P096 [Normal]: Đề tài tập trung vào các phương pháp Collaborative Filtering truyền thống như KNN và Matrix Factorization, chưa áp dụng các mô hình học sâu (Deep Learning) để cải thiện chất lượng gợi ý.
+P097 [Mục lớn]: Nội dung thực hiện
+P098 [Normal]: Đề tài được thực hiện thông qua các nội dung chính sau:
+P099 [Normal (Web)]: Tổng quan và chuẩn bị dữ liệu: Giới thiệu bộ dữ liệu MovieLens-1M, mô tả dữ liệu người dùng, phim và đánh giá, làm sạch và chuẩn hóa dữ liệu.
+P100 [Normal (Web)]: Khám phá dữ liệu (EDA): Phân tích phân bố điểm đánh giá và hành vi người dùng, đặc điểm ma trận người dùng – phim.
+P101 [Normal (Web)]: Xây dựng mô hình: Xây dựng ma trận người dùng – phim, chia train/test, huấn luyện các mô hình KNN và Matrix Factorization theo hướng Collaborative Filtering.
+P102 [Normal (Web)]: Đánh giá mô hình: Đánh giá bằng các chỉ số RMSE, MAE và Precision@K, Recall@K, so sánh kết quả giữa các mô hình.
+P103 [Normal (Web)]: Kết luận và ứng dụng: Lựa chọn mô hình tốt nhất và trình bày khả năng ứng dụng trong hệ thống gợi ý phim.
+P104 [Mục lớn]: Phương pháp tiếp cận
+P105 [Normal (Web)]: Đề tài áp dụng các phương pháp học máy trong hệ thống gợi ý (Recommendation Systems), chủ yếu theo hướng Collaborative Filtering, cho bài toán dự đoán mức độ yêu thích và gợi ý phim cho người dùng.
+P106 [Normal (Web)]: Quy trình chính
+P107 [Normal (Web)]: Hiểu dữ liệu:
+Tải và khám phá bộ dữ liệu MovieLens-1M bằng Python, phân tích dữ liệu người dùng, phim và điểm đánh giá thông qua pandas và matplotlib.
+P108 [Normal (Web)]: Tiền xử lý:
+Làm sạch dữ liệu, xử lý giá trị thiếu, xây dựng ma trận người dùng – phim, chuẩn hóa dữ liệu phục vụ cho các mô hình gợi ý.
+P109 [Normal (Web)]: Mô hình hóa:
+Áp dụng các phương pháp Collaborative Filtering gồm
+P110 [Normal (Web)]: KNN-based Collaborative Filtering làm mô hình cơ bản
+P111 [Normal (Web)]: Matrix Factorization sử dụng đại số tuyến tính để phân rã ma trận người dùng – phim, cải thiện chất lượng dự đoán
+P112 [Normal (Web)]: Tối ưu:
+Điều chỉnh các siêu tham số của mô hình như số láng giềng K, số chiều latent factors nhằm nâng cao hiệu quả gợi ý, đặc biệt trong bối cảnh dữ liệu thưa.
+P113 [Normal (Web)]: Đánh giá:
+Đánh giá mô hình bằng các chỉ số phù hợp với hệ thống gợi ý như RMSE, MAE đối với dự đoán rating và Precision, Recall đối với bài toán gợi ý Top-N.
+P114 [Normal (Web)]: Công cụ:
+Sử dụng Python cùng các thư viện pandas, numpy, scikit-learn cho xây dựng mô hình, matplotlib để trực quan hóa và joblib để lưu mô hình.
+P115 [Heading 1]: CƠ SỞ LÝ THUYẾT HỌC MÁY
+P116 [Mục lớn]: Machine Learning
+P117 [Heading 3]: 2.1.1 Machine Learning là gì?
+P118 [Normal]: Học máy hay máy học (machine learning) là một lĩnh vực của trí tuệ nhân tạo liên quan đến việc nghiên cứu và xây dựng các kĩ thuật cho phép các hệ thống "học" tự động từ dữ liệu để giải quyết những vấn đề cụ thể. Các thuật toán học máy xây dựng một mô hình dựa trên dữ liệu mẫu, được gọi là dữ liệu huấn luyện, để đưa ra dự đoán hoặc quyết định mà không cần được lập trình chi tiết về việc đưa ra dự đoán hoặc quyết định này. Ví dụ như các máy có thể "học" cách phân loại thư điện tử xem có phải thư rác (spam) hay không và tự động xếp thư vào thư mục tương ứng. Học máy rất gần với suy diễn thống kê (statistical inference) tuy có khác nhau về thuật ngữ. Một nhánh của học máy là học sâu phát triển rất mạnh mẽ gần đây và có những kết quả vượt trội so với các phương pháp học máy khác. Học máy có liên quan lớn đến thống kê, vì cả hai lĩnh vực đều nghiên cứu việc phân tích dữ liệu, nhưng khác với thống kê, học máy tập trung vào sự phức tạp của các giải thuật trong việc thực thi tính toán. Nhiều bài toán suy luận được xếp vào loại bài toán NP-khó, vì thế một phần của học máy là nghiên cứu sự phát triển các giải thuật suy luận xấp xỉ mà có thể xử lý được.
+P120 [Hình]: Hình 2. : Machine Learning
+P122 [Normal]: Học máy có hiện nay được áp dụng rộng rãi bao gồm máy truy tìm dữ liệu, chẩn đoán y khoa, phát hiện thẻ tín dụng giả, phân tích thị trường chứng khoán, phân loại các chuỗi DNA, ngoài ra còn dự đoán rủi do tiềm ẩn y khoa với các bệnh nguy hiểm hiện nay.
+P123 [Heading 3]: 2.1.2 Vì sao Machine Learning quan trọng?
+P124 [Nội dung]: Máy học là một lĩnh vực then chốt trong trí tuệ nhân tạo với nhiều ứng dụng thành công trong Dưới đây là một số lý do cho sự cần thiết của Machine Learning:
+P125 [Nội dung]: Tăng khả năng nhận dạng
+P126 [Nội dung]: Việc xây dựng hệ thống thông minh thực hiện các công việc liên quan tới trí tuệ như nhận dạng hình ảnh, xử lý ngôn ngữ tự nhiên là vô cùng khó khăn nếu không có khả năng học hỏi và tích lũy kinh nghiệm. Khi viết chương trình, cần một thuật toán rõ ràng để chuyển đầu vào thành đầu ra. Tuy nhiên rất khó để xây dựng được thuật toán trong những bài toán rắc rối.
+P127 [Nội dung]: Ví dụ: Trong nhận dạng chữ viết, con người dễ dàng nhận diện được chữ viết trong ảnh nhưng lại khó giải thích chính xác tại sao có thể kết luận được như vậy, vì vậy rất khó để viết ra 1 thuật toán cụ thể ngay từ đầu. Học máy giúp giải quyết vấn đề này bằng cách phân tích dữ liệu, tìm ra điểm chung và khác biệt giữa các ký tự từ rất nhiều ảnh chụp, từ đó dần hoàn thiện khả năng nhận dạng của máy..
+P128 [Nội dung]: Tăng khả năng thích nghi
+P129 [Nội dung]: Nhiều ứng dụng đòi hỏi chương trình máy tính linh hoạt để thích ứng với những thay đổi. Máy học có khả năng thích nghi cao nhờ phân tích dữ liệu thu thập được, tự động điều chỉnh mô hình để phù hợp với những thay đổi mới nhất.
+P130 [Nội dung]: Ví dụ: Hành vi mua sắm của khách hàng biến đổi theo thời gian và theo độ tuổi. Việc xây dựng thuật toán cố định cho ứng dụng sẽ không phù hợp. Thay vào đó, ứng dụng machine learning để “học” từ dữ liệu khách hàng sẽ là giải pháp phù hợp.
+P131 [Nội dung]: Triển khai công nghệ AI một cách thông minh
+P132 [Nội dung]: Việc tìm kiếm chuyên gia và thu thập kiến thức để thiết kế thuật toán giải quyết vấn đề là điều tốn kém thời gian và công sức. Trong khi đó, dữ liệu ngày càng nhiều và dễ dàng thu thập hơn.
+P133 [Nội dung]: Khả năng lưu trữ và tính toán của máy tính ngày càng mạnh mẽ, cho phép xử lý thuật toán máy học trên tập dữ liệu lớn. Máy học giúp tự động hóa quá trình học hỏi, giải quyết vấn đề hiệu quả hơn so với phương pháp truyền thống.
+P134 [Heading 3]: 2.1.3 Cách hoạt động của học máy
+P136 [Hình]: Hình 2. : Cách hoạt động của Machine Learning
+P137 [Normal]: Quy trình triển khai thuật toán học máy thường bao gồm 6 bước như sau:
+P138 [Normal]: Bước 1: Thu thập dữ liệu (Gathering data/Data collection)
+P139 [Normal]: Bước 2: Tiền xử lý dữ liệu (Data preprocessing)
+P140 [List Paragraph]: Trích xuất dữ liệu – Data extraction
+P141 [List Paragraph]: Làm sạch dữ liệu – Data cleaning
+P142 [List Paragraph]: Chuyển đổi dữ liệu – Data transformation
+P143 [List Paragraph]: Chuẩn hóa dữ liệu – Data normalization
+P144 [List Paragraph]: Trích xuất đặc trưng – Feature extraction
+P145 [Normal]: Bước 3: Phân tích dữ liệu (Data analysis)
+P146 [Normal]: Bước 4: Xây dựng mô hình máy học (Model building)
+P147 [Normal]: Bước 5: Huấn luyện mô hình (Model training)
+P148 [Normal]: Bước 6: Đánh giá mô hình (Model evaluation)
+P150 [Normal]: Trong số các bước này, thu thập dữ liệu, tiền xử lý và xây dựng bộ dữ liệu thường chiếm nhiều thời gian và công sức nhất. Đây là những bước cực kỳ quan trọng, quyết định đến hiệu quả của thuật toán máy học. Độ chính xác của kết quả phụ thuộc rất lớn vào lượng dữ liệu đầu vào.
+P151 [Heading 3]: 2.1.4 Các loại học máy hiện nay
+P152 [Normal]: Máy tính có thể học tập theo nhiều phương pháp khác nhau, trong đó 3 cách phổ biến nhất là:
+P153 [Nội dung]: Học máy có giám sát
+P154 [Nội dung]: Học máy có giám sát (Supervised Machine Learning) là phương pháp mà trong đó máy tính được học từ dữ liệu đã được đánh dấu trước, để phát triển các thuật toán có khả năng phân loại hoặc dự đoán kết quả một cách chính xác. Kỹ thuật này thường được áp dụng cho các bài toán phân lớp (Classification).
+P156 [Hình]: Hình 2. : Machine Learning có giám sát
+P161 [Nội dung]: Học máy không giám sát
+P162 [Normal]: Trái ngược với học máy có giám sát, máy học không giám sát (Unsupervised Learning) sử dụng thuật toán để phân tích và phân cụm các dữ liệu không có nhãn. Phương pháp này tự động tìm kiếm các mô hình và cấu trúc ẩn trong dữ liệu mà không yêu cầu sự hỗ trợ từ con người.
+P164 [Hình]: Hình 2. : Machine Learning không giám sát
+P166 [Nội dung]: Học máy bán giám sát
+P167 [Nội dung]: Trong bối cảnh dữ liệu phát triển nhanh chóng và không có cách nào để chúng được gắn nhãn kịp thời, đó là lý do học máy bán giám sát (Semi-supervised Learning) trở nên rất quan trọng. Phương pháp này kết hợp việc sử dụng dữ liệu đã được gắn nhãn và chưa gắn nhãn để huấn luyện máy tính.
+P168 [Normal]: Trong quá trình huấn luyện, con người sử dụng một tập dữ liệu có nhãn nhỏ hơn để chỉ dẫn máy tính cách phân loại và trích xuất từ một lượng lớn dữ liệu chưa được gắn nhãn. Semi-supervised Learning giúp giải quyết các vấn đề khi không có đủ dữ liệu gắn nhãn cho việc huấn luyện máy học có giám sát.
+P171 [Hình]: Hình 2. : Machine Learning bán giám sát
+P172 [Heading 3]: 2.1.5 Ưu nhược điểm học máy
+P173 [Normal]: Học máy là một công cụ mạnh mẽ trong kỷ nguyên số, nhưng bên cạnh những lợi ích vượt trội, nó cũng tồn tại những hạn chế nhất định cần lưu ý:
+P174 [Normal]: Ưu điểm
+P175 [List Paragraph]: Khả năng xử lý dữ liệu lớn: Có thể phân tích hàng triệu dữ liệu phức tạp mà con người không thể thực hiện thủ công.
+P176 [List Paragraph]: Tự động hóa linh hoạt: Máy tính tự học hỏi từ dữ liệu và cải thiện độ chính xác theo thời gian mà không cần lập trình lại từng bước một.
+P177 [List Paragraph]: Phát hiện quy luật ẩn: Khả năng tìm ra các mối liên hệ và xu hướng ngầm trong dữ liệu để đưa ra các dự báo có độ chính xác cao (ví dụ: dự báo chứng khoán, hành vi khách hàng).
+P178 [List Paragraph]: Ứng dụng đa dạng: Hoạt động hiệu quả trong nhiều lĩnh vực từ y tế, tài chính đến nhận diện giọng nói và hình ảnh.
+P179 [Normal]: Nhược điểm
+P180 [List Paragraph]: Phụ thuộc vào dữ liệu: Kết quả của mô hình chỉ tốt khi dữ liệu đầu vào chất lượng. Nếu dữ liệu bị sai lệch (bias) hoặc thiếu hụt, kết quả đầu ra sẽ không chính xác.
+P181 [List Paragraph]: Yêu cầu tài nguyên lớn: Quá trình huấn luyện các mô hình phức tạp đòi hỏi cấu hình máy tính mạnh (GPU/TPU) và tiêu tốn nhiều năng lượng.
+P182 [List Paragraph]: Vấn đề "Hộp đen" (Black Box): Một số mô hình (như Deep Learning) rất khó để giải thích tại sao máy lại đưa ra kết quả đó, gây khó khăn trong các lĩnh vực cần sự minh bạch như luật pháp hay y tế.
+P183 [List Paragraph]: Thời gian huấn luyện: Việc thu thập, làm sạch dữ liệu và huấn luyện mô hình có thể mất rất nhiều thời gian trước khi đưa vào sử dụng thực tế.
+P184 [Normal]: Tuy nhiên, ngày nay có nhiều công nghệ lưu trữ dữ liệu mới ra đời như Blockchain, Big data nên đây không phải là nhược điểm đáng quan ngại.
+P185 [Heading 3]: 2.1.6 Các ứng dụng Machine Learning trong thực tiễn
+P187 [Hình]: Hình 2. : Các ứng dụng Machine Learning trong thực tiễn
+P188 [Normal]: Dựa trên xu hướng công nghệ hiện nay, Machine Learning được triển khai mạnh mẽ trong nhiều lĩnh vực thực tế:
+P189 [List Paragraph]: Dịch thuật tự động: Sử dụng các mô hình học máy để chuyển đổi ngôn ngữ văn bản và giọng nói theo thời gian thực với độ chính xác ngày càng cao.
+P190 [List Paragraph]: Dự báo giao thông: Phân tích dữ liệu từ bản đồ và cảm biến để dự đoán tình trạng ùn tắc, hỗ trợ tối ưu hóa lộ trình di chuyển.
+P191 [List Paragraph]: Tìm kiếm web & Cơ chế đề xuất: Tối ưu hóa kết quả tìm kiếm trên Google và đưa ra các gợi ý sản phẩm, phim ảnh phù hợp với sở thích cá nhân người dùng.
+P192 [List Paragraph]: Theo dõi gian lận trực tuyến: Nhận diện nhanh chóng các hành vi giao dịch đáng ngờ hoặc lừa đảo trên các nền tảng tài chính và thương mại điện tử.
+P193 [List Paragraph]: Chẩn đoán y khoa: Hỗ trợ bác sĩ phân tích các dữ liệu lâm sàng và hình ảnh y tế để phát hiện sớm và chẩn đoán bệnh lý chính xác hơn.
+P194 [List Paragraph]: Nhận diện văn bản & lời nói: Chuyển đổi giọng nói thành văn bản hoặc nhận diện chữ viết tay để số hóa dữ liệu.
+P195 [List Paragraph]: Lọc thư rác: Hệ thống tự động phân loại và ngăn chặn các email quảng cáo hoặc thư chứa mã độc trước khi chúng đến hộp thư chính.
+P196 [List Paragraph]: Nhận diện hình ảnh: Ứng dụng trong việc nhận dạng khuôn mặt, vật thể và phân tích nội dung trong video.
+P197 [List Paragraph]: Trợ lý cá nhân ảo: Các trí tuệ nhân tạo tương tác bằng giọng nói để hỗ trợ người dùng điều khiển thiết bị thông minh và tra cứu thông tin.
+P198 [Mục lớn]: Phát biểu bài toán
+P199 [Nội dung]: Bài toán trong đề tài là xây dựng hệ thống gợi ý phim nhằm dự đoán mức độ yêu thích của người dùng đối với các bộ phim dựa trên lịch sử tương tác và đánh giá trước đó. Đây là một bài toán hệ thống gợi ý (Recommendation System) trong học máy, chủ yếu theo hướng Collaborative Filtering.
+P200 [Nội dung]: Đầu vào (Input): Các đặc trưng mô tả mối quan hệ giữa người dùng và phim được trích xuất từ bộ dữ liệu MovieLens-1M, bao gồm
+P201 [Nội dung]: Thông tin người dùng: Mã người dùng, giới tính, độ tuổi, nghề nghiệp, khu vực sinh sống
+P202 [Nội dung]: Thông tin phim: Mã phim, tên phim, thể loại và một số siêu dữ liệu liên quan
+P203 [Nội dung]: Dữ liệu tương tác: Điểm đánh giá (rating) của người dùng đối với phim trên thang điểm từ 1 đến 5
+P204 [Nội dung]: Đầu ra (Output): Kết quả của hệ thống gợi ý được thể hiện theo 2 dạng
+P205 [Nội dung]: Dự đoán điểm đánh giá: Ước lượng mức độ yêu thích của người dùng đối với các phim chưa xem
+P206 [Nội dung]: Danh sách gợi ý Top-N: Đề xuất danh sách N bộ phim phù hợp nhất cho từng người dùng
+P207 [Nội dung]: Mục tiêu: Xây dựng và đánh giá các mô hình gợi ý phim dựa trên Collaborative Filtering, tập trung vào 2 phương pháp KNN-based Collaborative Filtering và Matrix Factorization (dựa trên đại số tuyến tính và ma trận người dùng–phim). Mô hình hướng tới việc tạo ra gợi ý phù hợp và cá nhân hóa cho từng người dùng, đồng thời cải thiện chất lượng dự đoán trong bối cảnh dữ liệu thưa.
+P208 [Nội dung]: Ý nghĩa thực tiễn: Kết quả của bài toán giúp người dùng dễ dàng tìm được phim phù hợp với sở thích cá nhân, giảm thời gian tìm kiếm và nâng cao trải nghiệm trên các nền tảng xem phim trực tuyến. Đồng thời, hệ thống còn hỗ trợ các nền tảng phân phối nội dung trong việc cá nhân hóa đề xuất và tăng mức độ tương tác của người dùng.
+P209 [Mục lớn]: Mô hình học máy được lựa chọn
+P210 [Nội dung]: Trong đề tài này, chúng em xây dựng một lộ trình thử nghiệm mô hình gợi ý phim đi từ các phương pháp cơ bản đến các kỹ thuật nâng cao trong hệ thống đề xuất. Mục tiêu của đề tài là tìm ra sự cân bằng giữa tính đơn giản, khả năng diễn giải của mô hình và chất lượng gợi ý, đặc biệt là khả năng cá nhân hóa nội dung cho từng người dùng.
+P211 [Nội dung]: KNN-based Collaborative Filtering là phương pháp gợi ý dựa trên độ tương đồng giữa người dùng hoặc giữa các phim. Mô hình sử dụng các thước đo tương đồng như cosine similarity để tìm ra các người dùng hoặc phim gần nhất, từ đó đưa ra gợi ý dựa trên hành vi của các đối tượng tương tự. Đây là phương pháp cơ bản, dễ triển khai và có khả năng diễn giải tốt.
+P212 [Nội dung]: Matrix Factorization là phương pháp gợi ý dựa trên đại số tuyến tính, trong đó ma trận người dùng – phim được phân rã thành các ma trận đặc trưng tiềm ẩn. Các đặc trưng này đại diện cho sở thích của người dùng và đặc điểm của phim, giúp mô hình dự đoán chính xác hơn điểm đánh giá của người dùng đối với các phim chưa xem. Phương pháp này hoạt động hiệu quả trong trường hợp dữ liệu thưa.
+P213 [Nội dung]: Collaborative Filtering tổng quát khai thác dữ liệu tương tác của cộng đồng người dùng để đưa ra gợi ý, bao gồm cả hướng tiếp cận user-based và item-based, và không phụ thuộc nhiều vào nội dung chi tiết của phim.
+P214 [Nội dung]: Lý do lựa chọn các mô hình trên là vì chúng cho phép so sánh hiệu quả giữa các phương pháp từ cơ bản đến nâng cao trong hệ thống gợi ý. Các mô hình này phù hợp với bài toán gợi ý phim và bộ dữ liệu MovieLens, đồng thời có khả năng xử lý tốt dữ liệu thưa. Bên cạnh đó, KNN có ưu điểm là dễ hiểu và dễ triển khai, trong khi Matrix Factorization mang lại chất lượng gợi ý cao hơn trên các tập dữ liệu lớn và thực tế.
+P215 [Heading 3]: 2.4.1 KNN (K-Nearest Neighbors)
+P216 [Nội dung]: KNN (K-Nearest Neighbors) là một thuật toán học máy đơn giản và phổ biến, thuộc nhóm học có giám sát. Ý tưởng chính của KNN là dựa trên sự tương đồng giữa các đối tượng dữ liệu để đưa ra dự đoán. Thay vì xây dựng một mô hình huấn luyện phức tạp, KNN lưu trữ toàn bộ dữ liệu huấn luyện và chỉ thực hiện tính toán khi cần dự đoán cho một mẫu mới.
+P220 [Nội dung]: .
+P221 [Hình]: Hình 2. : KNN (K-Nearest Neighbors)
+P222 [No Spacing]: Xác định thước đo khoảng cách
+P223 [No Spacing]: Để xác định những điểm dữ liệu nào gần nhất với một điểm truy vấn (query point), cần tính khoảng cách giữa điểm truy vấn và các điểm dữ liệu còn lại. Các thước đo khoảng cách này giúp tạo ra ranh giới quyết định để phân chia các điểm truy vấn thành những vùng khác nhau và thường được thể hiện bằng biểu đồ Voronoi.
+P224 [No Spacing]: Có nhiều cách để đo khoảng cách, nhưng trong phạm vi bài viết này, chúng ta sẽ tập trung vào phương pháp phổ biến nhất:
+P225 [No Spacing]: Khoảng cách Euclid (p = 2): Đây là thước đo được sử dụng nhiều nhất, áp dụng cho các vectơ có giá trị thực. Công thức này đo đường thẳng giữa điểm truy vấn và các điểm dữ liệu khác.
+P232 [No Spacing]: Công thức tính khoảng cách Euclid
+P233 [No Spacing]: Khoảng cách Manhattan (p = 1): Đây cũng là một thước đo khoảng cách phổ biến, tính tổng giá trị tuyệt đối của sự chênh lệch giữa các tọa độ của hai điểm. Phương pháp này còn được gọi là khoảng cách taxi hoặc khoảng cách ô phố vì thường được hình dung trên một lưới đường phố, giống như cách bạn di chuyển từ địa chỉ này đến địa chỉ khác theo các con đường trong thành phố.
+P238 [No Spacing]: Công thức tính khoảng cách Manhattan
+P239 [No Spacing]: Khoảng cách Minkowski: Đây là một dạng tổng quát của cả khoảng cách Euclid và khoảng cách Manhattan. Tham số p trong công thức của Minkowski cho phép tạo ra nhiều thước đo khoảng cách khác nhau. Cụ thể, khi p = 2, công thức trở thành khoảng cách Euclid; còn khi p = 1, nó là khoảng cách Manhattan.
+P244 [No Spacing]: Công thức tính khoảng cách Minkowski
+P245 [No Spacing]: Khoảng cách Hamming: Đây là kỹ thuật thường được sử dụng với kiểu dữ liệu Boolean hoặc chuỗi ký tự, nhằm xác định vị trí mà các phần tử của hai vectơ không khớp nhau. Vì vậy, nó còn được gọi là chỉ số chồng chéo. Công thức tính khoảng cách Hamming khá đơn giản: đếm số vị trí mà hai vectơ khác nhau.
+P249 [No Spacing]: Công thức tính khoảng cách Haming
+P250 [No Spacing]: Ví dụ: Nếu bạn có hai chuỗi ký tự như sau, thì khoảng cách Hamming sẽ bằng 2, vì chỉ có hai ký tự khác nhau giữa hai chuỗi
+P254 [No Spacing]: Ví dụ về khoảng cách Hamming
+P256 [No Spacing]: Xác định giá trị K trong KNN
+P257 [No Spacing]: Giá trị K trong thuật toán KNN xác định số lượng điểm dữ liệu lân cận gần nhất được xem xét để quyết định phân loại cho một điểm dữ liệu truy vấn. Ví dụ, nếu K = 1, điểm dữ liệu mới sẽ được gán vào cùng lớp với điểm dữ liệu lân cận gần nhất của nó.
+P258 [No Spacing]: Việc chọn giá trị K là một quá trình cần sự cân bằng. Các giá trị K nhỏ có thể dẫn đến phương sai cao (high variance) nhưng độ chệch thấp (low bias), trong khi các giá trị lớn có thể làm tăng độ chệch (high bias) nhưng giảm phương sai (low variance). Lựa chọn này cũng phụ thuộc nhiều vào đặc điểm dữ liệu: nếu dữ liệu có nhiều nhiễu hoặc ngoại lệ, các giá trị K lớn thường cho kết quả tốt hơn. Nhìn chung, nên chọn K là số lẻ để tránh trường hợp hòa phiếu khi phân loại, và kỹ thuật cross-validation có thể giúp bạn tìm ra giá trị K tối ưu cho tập dữ liệu của mình.
+P260 [No Spacing]: Ứng dụng của KNN trong Học máy
+P262 [No Spacing]: Tiền xử lý dữ liệu: KNN được dùng để ước lượng các giá trị bị thiếu trong tập dữ liệu bằng một quy trình được gọi là bù dữ liệu thiếu.
+P263 [No Spacing]: Hệ thống gợi ý: Dựa trên dữ liệu hành vi người dùng, KNN có thể gợi ý nội dung hoặc sản phẩm bằng cách nhóm những người dùng có hành vi tương tự và đề xuất dựa trên xu hướng của nhóm đó. Tuy nhiên, với những hệ thống cần xử lý dữ liệu khổng lồ, phương pháp này có thể gặp khó khăn về hiệu suất.
+P264 [No Spacing]: Tài chính: KNN được sử dụng để đánh giá rủi ro tín dụng, dự báo thị trường chứng khoán, tỷ giá hối đoái hay thậm chí phát hiện rửa tiền. Nhờ khả năng học từ dữ liệu lịch sử, thuật toán này giúp đưa ra những dự đoán hỗ trợ ra quyết định trong lĩnh vực tài chính.
+P265 [No Spacing]: Y tế: Trong y tế, KNN được dùng để dự đoán nguy cơ bệnh, chẳng hạn như đánh giá khả năng mắc bệnh tim hoặc ung thư tuyến tiền liệt, bằng cách phân tích dữ liệu về biểu hiện gen hoặc các chỉ số y tế liên quan.
+P266 [No Spacing]: Nhận dạng mẫu: KNN hỗ trợ phân loại văn bản và chữ số viết tay, ví dụ như các con số trên biểu mẫu hoặc phong bì thư.
+P268 [No Spacing]: Ưu điểm của KNN
+P269 [No Spacing]: Dễ triển khai: Với cấu trúc đơn giản nhưng vẫn đảm bảo độ chính xác cao, KNN thường là một trong những thuật toán đầu tiên mà người học khoa học dữ liệu tiếp xúc.
+P270 [No Spacing]: Dễ thích nghi: Khi có thêm dữ liệu huấn luyện mới, KNN có thể tự điều chỉnh và cập nhật kết quả mà không cần huấn luyện lại mô hình (vì toàn bộ dữ liệu đều được lưu trữ trong bộ nhớ).
+P271 [No Spacing]: Ít siêu tham số: KNN chỉ cần xác định giá trị K và thước đo khoảng cách, ít hơn nhiều so với hầu hết các thuật toán học máy khác.
+P273 [No Spacing]: Nhược điểm của KNN
+P274 [No Spacing]: Khó mở rộng: KNN phải lưu toàn bộ dữ liệu huấn luyện và tính toán mỗi khi dự đoán, gây tiêu tốn tài nguyên và thời gian khi xử lý khối lượng dữ liệu lớn.
+P275 [No Spacing]: Lời nguyền chiều không gian: KNN kém hiệu quả với dữ liệu có nhiều đặc trưng. Khi số đặc trưng vượt mức tối ưu, tỷ lệ lỗi phân loại tăng lên, đặc biệt khi kích thước mẫu nhỏ.
+P276 [No Spacing]: Dễ gặp hiện tượng quá khớp (overfitting): KNN dễ gặp hiện tượng quá khớp, nhất là với giá trị K nhỏ. Dùng giá trị K lớn có thể giảm rủi ro này nhưng nếu quá lớn lại có thể gây nên hiện tượng chưa khớp (underfitting). Các kỹ thuật như chọn lọc đặc trưng và giảm chiều dữ liệu thường được áp dụng để khắc phục.
+P277 [Heading 3]: 2.4.2 Matrix Factorization
+P278 [Normal]: Matrix Factorization (MF) là một phương pháp gợi ý phổ biến trong hệ thống Recommendation System, thuộc nhóm Collaborative Filtering. Ý tưởng chính của phương pháp này là biểu diễn người dùng và phim trong một không gian đặc trưng tiềm ẩn (latent space) có số chiều nhỏ hơn nhiều so với không gian ban đầu. Thông qua đó, mô hình học được các yếu tố ẩn phản ánh sở thích của người dùng và đặc điểm của phim..
+P280 [Hình]: Hình 2.  Matrix Factorization
+P281 [Normal]: 1. Biểu diễn bài toán
+P282 [Normal]: Giả sử ta có ma trận đánh giá R, trong đó R(u,i) là điểm đánh giá của người dùng u cho phim i, m là số lượng người dùng và n là số lượng phim. Trong thực tế, mỗi người dùng chỉ đánh giá một số ít phim nên ma trận R là ma trận thưa. Mục tiêu của Matrix Factorization là xấp xỉ ma trận R bằng tích của hai ma trận có số chiều thấp hơn, trong đó ma trận P biểu diễn đặc trưng tiềm ẩn của người dùng và ma trận Q biểu diễn đặc trưng tiềm ẩn của phim.
+P283 [Normal]: Trong đó:
+P284 [Normal]: Ma trận P có kích thước m nhân k, biểu diễn đặc trưng tiềm ẩn của người dùng
+P285 [Normal]: Ma trận Q có kích thước n nhân k, biểu diễn đặc trưng tiềm ẩn của phim
+P286 [Normal]: k là số chiều của không gian tiềm ẩn, thường nhỏ hơn rất nhiều so với m và n
+P287 [Normal]: Mỗi người dùng u được biểu diễn bởi một vector pu trong ma trận P
+Mỗi phim i được biểu diễn bởi một vector qi trong ma trận Q
+P289 [Normal]: 2. Dự đoán điểm đánh giá
+P290 [Normal]: Sau khi phân rã ma trận, mức độ phù hợp giữa người dùng u và phim i được tính thông qua tích vô hướng giữa hai vector đặc trưng tương ứng.Điểm đánh giá dự đoán được xác định bằng tích của vector người dùng pu và vector phim
+Giá trị dự đoán này phản ánh mức độ yêu thích của người dùng đối với phim chưa xem.
+P291 [Normal]: Cách tiếp cận này cho phép hệ thống ước lượng điểm đánh giá cho các phim mà người dùng chưa từng tương tác, từ đó phục vụ việc gợi ý.
+P292 [Normal]: 3. Hàm mất mát (Loss Function)
+P293 [Normal]: Để huấn luyện mô hình, cần tìm các ma trận P và Q sao cho sai số giữa điểm đánh giá dự đoán và điểm đánh giá thực tế là nhỏ nhất. Hàm mất mát thường được sử dụng là Mean Squared Error (MSE) kết hợp với regularization nhằm tránh hiện tượng quá khớp (overfitting).
+P294 [Normal]: Hàm mất mát bao gồm hai thành phần chính:
+P295 [Normal]: Thành phần sai số giữa giá trị dự đoán và giá trị thực
+P296 [Normal]: Thành phần regularization để kiểm soát độ lớn của các vector đặc trưng
+P297 [Normal]: Việc thêm regularization giúp mô hình không học quá chi tiết theo dữ liệu huấn luyện và cải thiện khả năng tổng quát hóa.
+P298 [Normal]: 4. Tối ưu hóa mô hình
+P299 [Normal]: Matrix Factorization thường được huấn luyện bằng các thuật toán tối ưu như Gradient Descent hoặc Stochastic Gradient Descent.
+P300 [Normal]: Trong quá trình huấn luyện, với mỗi cặp người dùng – phim có đánh giá, mô hình sẽ:
+P301 [Normal]: Tính điểm đánh giá dự đoán
+P302 [Normal]: Tính sai số giữa giá trị dự đoán và giá trị thực
+P303 [Normal]: Cập nhật các vector đặc trưng của người dùng và phim theo hướng làm giảm hàm mất mát
+P304 [Normal]: Quá trình này được lặp lại qua nhiều vòng huấn luyện (epoch) cho đến khi mô hình hội tụ.
+P305 [Normal]: 5. Mô hình mở rộng với Bias
+P306 [Normal]: Trong thực tế, một số người dùng có xu hướng chấm điểm cao hoặc thấp hơn mức trung bình, và một số phim thường nhận được đánh giá cao hơn các phim khác. Để phản ánh điều này, Matrix Factorization thường được mở rộng bằng cách thêm các thành phần bias.
+P307 [Normal]: Mô hình mở rộng bao gồm:
+P308 [Normal]: Bias toàn cục biểu diễn mức đánh giá trung bình của toàn bộ dữ liệu
+P309 [Normal]: Bias của người dùng
+P310 [Normal]: Bias của phim
+P311 [Normal]: Việc bổ sung bias giúp mô hình dự đoán chính xác hơn và phản ánh tốt hơn hành vi thực tế của người dùng.
+P312 [Normal]: 6. Nguyên lý hoạt động tổng quát
+P313 [Normal]: Quy trình hoạt động của Matrix Factorization có thể tóm tắt như sau:
+P314 [Normal]: Bước 1 khởi tạo ngẫu nhiên các vector đặc trưng cho người dùng và phim.
+P315 [Normal]: Bước 2 duyệt qua từng cặp người dùng và phim có đánh giá trong tập dữ liệu.
+P316 [Normal]: Bước 3 tính điểm đánh giá dự đoán và sai số giữa giá trị dự đoán và giá trị thực.
+P317 [Normal]: Bước 4 cập nhật các vector đặc trưng bằng thuật toán tối ưu.
+P318 [Normal]: Bước 5 lặp lại quá trình huấn luyện cho đến khi mô hình hội tụ.
+P319 [Normal]: Bước 6 sử dụng mô hình đã huấn luyện để dự đoán và gợi ý Top N phim cho người dùng.
+P320 [Normal]: 7. Giả thiết của mô hình
+P321 [Normal]: Matrix Factorization dựa trên một số giả thiết cơ bản:
+P322 [Normal]: Sở thích của người dùng và đặc điểm của phim có thể biểu diễn bằng một số nhỏ yếu tố tiềm ẩn
+P323 [Normal]: Dữ liệu đánh giá phản ánh đúng mức độ yêu thích của người dùng
+P324 [Normal]: Mối quan hệ giữa người dùng và phim có thể được mô hình hóa thông qua các vector trong không gian tiềm ẩn
+P325 [Normal]: 8. Ưu điểm và hạn chế
+P326 [Normal]: Ưu điểm của Matrix Factorization là xử lý tốt dữ liệu thưa, cho chất lượng gợi ý cao và được áp dụng rộng rãi trong các hệ thống gợi ý thực tế như Netflix và MovieLens.
+P327 [Normal]: Tuy nhiên, phương pháp này cũng tồn tại một số hạn chế như khó diễn giải ý nghĩa cụ thể của các yếu tố tiềm ẩn, gặp khó khăn với bài toán người dùng mới hoặc phim mới, và yêu cầu lựa chọn phù hợp các siêu tham số như số chiều tiềm ẩn và tốc độ học.
+P328 [Mục lớn]: Kết luận chương
+P329 [Nội dung]: Chương này đã trình bày các kiến thức lý thuyết nền tảng liên quan đến hệ thống gợi ý, bao gồm khái niệm hệ thống gợi ý, các phương pháp gợi ý phổ biến và phát biểu bài toán gợi ý phim dựa trên dữ liệu đánh giá của người dùng. Đồng thời, chương cũng giới thiệu hai mô hình được sử dụng trong đề tài là KNN (K-Nearest Neighbors) và Matrix Factorization, cùng với nguyên lý hoạt động, các giả thiết và hạn chế của từng mô hình. Đây là cơ sở lý thuyết quan trọng phục vụ cho quá trình xây dựng, huấn luyện và đánh giá hệ thống gợi ý phim trong các chương tiếp theo.
+P330 [Heading 1]: DỮ LIỆU VÀ TIỀN XỬ LÝ
+P331 [Mục lớn]: Tổng quan bộ dữ liệu
+P332 [Heading 3]: 3.1.1. Giới thiệu bộ dữ liệu
+P333 [List Paragraph]: Bộ dữ liệu được sử dụng trong đề tài là MovieLens-1M with Posters and Metadata, được lấy từ nền tảng Kaggle, bao gồm dữ liệu đánh giá phim của người dùng cùng với các thông tin liên quan đến người dùng và phim.
+P334 [List Paragraph]: Nguồn dữ liệu: Kaggle – MovieLens-1M with Posters and Metadata.
+Link:https://www.kaggle.com/datasets/mohamedelmallah1/movielens-1m-with-posters-and-metadata
+P335 [List Paragraph]: Quy mô dữ liệu: Bộ dữ liệu bao gồm khoảng 1.000.000 lượt đánh giá, hơn 6.000 người dùng và gần 4.000 bộ phim, cùng với các thuộc tính mô tả người dùng, phim và dữ liệu tương tác.
+P336 [List Paragraph]: Mục tiêu dữ liệu: Mục tiêu của đề tài là xây dựng hệ thống gợi ý phim nhằm dự đoán mức độ yêu thích của người dùng và đề xuất các bộ phim phù hợp dựa trên lịch sử đánh giá. Bộ dữ liệu phản ánh hành vi đánh giá thực tế của người dùng, được sử dụng để huấn luyện và đánh giá các mô hình gợi ý như KNN và Matrix Factorization. Kết quả của hệ thống mang tính hỗ trợ cá nhân hóa nội dung và nâng cao trải nghiệm người dùng, không phản ánh tuyệt đối sở thích của người dùng trong mọi trường hợp.
+P340 [Hình]: Hình 3.  Tổng quan 3 bộ dữ liệu user-movie-rating
+P344 [Heading 3]: 3.1.2. Danh sách các thuộc tính
+P346 [Mục lớn]: Phân tích dữ liệu ban đầu
+P347 [Nội dung]: Bộ dữ liệu được sử dụng trong đề tài là MovieLens-1M with Posters and Metadata Dataset, được lấy từ nền tảng Kaggle, bao gồm dữ liệu đánh giá phim của người dùng cùng với các thông tin liên quan đến người dùng và phim, phục vụ cho việc xây dựng hệ thống gợi ý phim.
+P348 [Heading 3]: 3.2.1. Dữ liệu trực quan
+P349 [Heading 4]: 3.2.1.1 Biểu đồ phân bố điểm trung bình của phim
+P351 [Hình]: Hình 3.  Biểu đồ phân bố điểm trung bình của phim
+P353 [Normal]: Biểu đồ cho thấy phân bố điểm đánh giá trung bình của các phim có sự tập trung rõ rệt trong một khoảng giá trị nhất định. Cụ thể, phần lớn các bộ phim có điểm đánh giá trung bình nằm trong khoảng từ 3.0 đến 4.0, cho thấy đa số phim trong bộ dữ liệu được người dùng đánh giá ở mức trung bình khá đến tốt.
+P354 [Normal]: • Các phim có điểm đánh giá trung bình thấp (dưới 2.0) chiếm tỷ lệ rất nhỏ, cho thấy số lượng phim bị đánh giá kém là không nhiều. Điều này phản ánh xu hướng người dùng thường chỉ đánh giá những bộ phim mà họ có trải nghiệm tương đối tích cực.
+P355 [Normal]: • Đỉnh của phân bố tập trung quanh mức 3.5, thể hiện đây là mức điểm phổ biến nhất trong dữ liệu. Điều này cho thấy thang điểm đánh giá của người dùng có xu hướng nghiêng về phía tích cực, và các phim thường nhận được đánh giá cao hơn mức trung bình.
+P356 [Normal]: • Phần đuôi bên phải của phân bố (trên 4.5) khá ngắn, cho thấy số lượng phim đạt điểm đánh giá rất cao là không nhiều. Điều này phản ánh tính phân hóa trong chất lượng phim, khi chỉ một số ít phim thực sự được người dùng đánh giá xuất sắc.
+P357 [Normal]: • Đường KDE cho thấy phân bố điểm đánh giá có dạng gần giống phân bố chuẩn, chứng tỏ dữ liệu đánh giá khá ổn định và không bị lệch quá mạnh về một phía.
+P358 [Normal]: => Nhận xét này cho thấy điểm đánh giá trung bình là một đặc trưng quan trọng, phản ánh rõ hành vi và xu hướng đánh giá của người dùng. Đồng thời, kết quả phân tích này có ý nghĩa trong việc xây dựng và đánh giá các mô hình gợi ý phim như KNN và Matrix Factorization, đặc biệt trong việc dự đoán rating và đề xuất danh sách phim phù hợp cho người dùng.
+P361 [Heading 4]: 3.2.1.2 Biểu đồ Boxplot phân bố điểm rating của người dùng
+P363 [Hình]: Hình 3.  Biểu đồ Boxplot phân bố điểm rating của người dùng
+P365 [Normal]: Biểu đồ boxplot cho thấy phân bố điểm rating của người dùng chủ yếu tập trung trong khoảng từ 3 đến 4 điểm, phản ánh rằng phần lớn người dùng có xu hướng đánh giá phim ở mức trung bình khá đến tốt. Giá trị trung vị của điểm rating nằm gần mức 4, cho thấy xu hướng đánh giá thiên về tích cực.
+P366 [Normal]: • Khoảng tứ phân vị (IQR) tương đối hẹp, cho thấy mức độ phân tán của điểm rating không quá lớn. Điều này chứng tỏ hành vi đánh giá của người dùng khá ổn định và không có sự khác biệt quá lớn giữa đa số người dùng.
+P367 [Normal]: • Phần whisker phía dưới kéo dài đến khoảng 2 điểm, trong khi phía trên kéo dài đến 5 điểm, cho thấy người dùng vẫn có những đánh giá thấp và rất cao, tuy nhiên tần suất không nhiều. Ngoài ra, biểu đồ xuất hiện một số giá trị ngoại lệ (outliers) ở mức rating thấp, phản ánh một số trường hợp người dùng đánh giá phim rất thấp so với mặt bằng chung.
+P368 [Normal]: • Nhìn chung, phân bố điểm rating của người dùng có xu hướng lệch nhẹ về phía các giá trị cao, cho thấy người dùng thường có xu hướng đánh giá tích cực hơn đối với các phim mà họ lựa chọn xem và đánh giá.
+P369 [Normal]: => Nhận xét này cho thấy điểm rating của người dùng là một đặc trưng quan trọng, phản ánh rõ hành vi và xu hướng đánh giá trong hệ thống. Kết quả phân tích này có ý nghĩa trong việc xây dựng các mô hình gợi ý phim như KNN và Matrix Factorization, đồng thời cần được xem xét trong quá trình tiền xử lý và đánh giá mô hình.
+P371 [Heading 4]: 3.2.1.3 Biểu đồ phân số lượng đánh giá theo từng mức rating
+P373 [Hình]: Hình 3.  Biểu đồ phân số lượng đánh giá theo từng mức rating
+P374 [Normal]: Biểu đồ cho thấy số lượng đánh giá của người dùng phân bố không đồng đều giữa các mức rating. Trong đó, mức rating 4 chiếm tỷ lệ cao nhất với số lượng đánh giá lớn nhất, cho thấy người dùng có xu hướng đánh giá phim ở mức tích cực.
+P375 [Normal]: • Các mức rating 3 và 5 cũng có số lượng đánh giá tương đối cao. Rating 3 phản ánh những bộ phim được đánh giá ở mức trung bình, trong khi rating 5 đại diện cho các phim được người dùng đánh giá rất cao. Điều này cho thấy người dùng sẵn sàng sử dụng toàn bộ thang điểm để thể hiện mức độ yêu thích của mình.
+P376 [Normal]: • Ngược lại, các mức rating thấp như 1 và 2 có số lượng đánh giá thấp hơn đáng kể so với các mức còn lại. Điều này cho thấy người dùng ít khi đánh giá phim ở mức rất thấp, có thể do xu hướng chỉ đánh giá những phim mà họ đã xem và có trải nghiệm tương đối tích cực.
+P377 [Normal]: • Nhìn chung, phân bố đánh giá có xu hướng lệch về phía các mức rating cao, phản ánh hành vi đánh giá thiên về tích cực của người dùng trong bộ dữ liệu MovieLens.
+P378 [Normal]: => Nhận xét này cho thấy dữ liệu đánh giá không cân bằng giữa các mức rating, đây là yếu tố cần được xem xét trong quá trình xây dựng và đánh giá các mô hình gợi ý phim. Việc hiểu rõ phân bố này có ý nghĩa quan trọng đối với các phương pháp như KNN và Matrix Factorization nhằm cải thiện chất lượng dự đoán và đề xuất phim phù hợp cho người dùng.
+P380 [Heading 4]: 3.2.1.4 Mối tương quan giữa độ phổ biến và điểm đánh giá trung bình của phim
+P382 [Hình]: Hình 3.  Mối quan hệ giữa độ phổ biến và điểm đánh giá trung bình của phim
+P383 [Normal]: • Biểu đồ phân tán thể hiện mối quan hệ giữa độ phổ biến của phim (số lượng lượt đánh giá) và điểm đánh giá trung bình của phim. Kết quả cho thấy tồn tại mối tương quan dương ở mức trung bình giữa hai biến này, với hệ số tương quan Pearson khoảng 0.36.
+P384 [Normal]: • Các bộ phim có số lượng lượt đánh giá thấp có điểm đánh giá trung bình phân bố khá rộng, từ mức thấp đến mức cao. Điều này cho thấy với những phim ít người xem, điểm đánh giá có thể bị ảnh hưởng mạnh bởi ý kiến chủ quan của một số ít người dùng.
+P385 [Normal]: • Ngược lại, các phim có độ phổ biến cao (nhiều lượt đánh giá) thường có điểm đánh giá trung bình ổn định hơn và tập trung chủ yếu trong khoảng từ 3.5 đến 4.5. Điều này phản ánh rằng khi số lượng đánh giá tăng lên, điểm trung bình có xu hướng phản ánh chính xác hơn chất lượng tổng thể của phim.
+P386 [Normal]: • Tuy nhiên, mối tương quan không quá mạnh, cho thấy độ phổ biến cao không đồng nghĩa tuyệt đối với điểm đánh giá cao. Vẫn tồn tại những phim rất phổ biến nhưng chỉ được đánh giá ở mức trung bình, cũng như một số phim ít phổ biến nhưng có điểm đánh giá cao.
+P387 [Normal]: => Nhận xét này cho thấy độ phổ biến của phim và điểm đánh giá trung bình có mối liên hệ nhất định nhưng không hoàn toàn tuyến tính. Kết quả này có ý nghĩa quan trọng trong việc xây dựng hệ thống gợi ý phim, đặc biệt khi cần kết hợp giữa yếu tố mức độ yêu thích (rating) và mức độ phổ biến nhằm tránh thiên lệch khi đề xuất phim trong các mô hình như KNN và Matrix Factorization.
+P389 [Heading 4]: 3.2.1.5 Biểu đồ phân bố số lần rating của người dùng ( rating>10)
+P392 [Hình]: Hình 3. Biểu đồ phân số lần rating của người dùng ( rating>10)
+P394 [Normal]: • Biểu đồ cho thấy phân bố số lần rating của người dùng có dạng lệch phải rõ rệt, trong đó phần lớn người dùng có số lần đánh giá tương đối thấp, tập trung chủ yếu trong khoảng từ 10 đến khoảng 200 lần rating.
+P395 [Normal]: • Số lượng người dùng giảm dần khi số lần rating tăng lên. Chỉ có một số ít người dùng thực hiện rất nhiều lượt đánh giá (hàng trăm đến trên 1000 lần), cho thấy sự tồn tại của nhóm người dùng hoạt động tích cực hơn so với mặt bằng chung.
+P396 [Normal]: • Kết quả thống kê cho thấy 100% người dùng trong tập dữ liệu đều có số lần rating lớn hơn 10, chứng tỏ bộ dữ liệu đã được lọc để loại bỏ các người dùng quá ít tương tác. Điều này giúp đảm bảo dữ liệu đủ thông tin để xây dựng các mô hình gợi ý dựa trên hành vi người dùng.
+P397 [Normal]: • Sự chênh lệch lớn giữa nhóm người dùng ít rating và nhóm người dùng nhiều rating phản ánh tính không đồng đều trong mức độ hoạt động của người dùng. Điều này là đặc trưng phổ biến trong các hệ thống gợi ý thực tế.
+P398 [Normal]: => Nhận xét này cho thấy số lần rating của người dùng là một yếu tố quan trọng, ảnh hưởng trực tiếp đến chất lượng học của các mô hình gợi ý phim. Việc lọc người dùng có số lần rating quá thấp giúp cải thiện độ ổn định và hiệu quả của các phương pháp như KNN và Matrix Factorization, đồng thời giảm nhiễu trong quá trình huấn luyện mô hình.
+P400 [Mục lớn]: Tiền xử lý dữ liệu
+P401 [Heading 3]: 3.3.1. Phân tích,kiểm tra và xử lý dữ liệu
+P404 [Hình]: Hình 3. 7 Phân tích, kiểm tra và xử lý dữ liệu
+P405 [Normal]: Dữ liệu trong đề tài được kiểm tra giá trị thiếu (missing values) trên ba bảng chính gồm USERS, MOVIES và RATINGS. Kết quả cho thấy các thuộc tính trong bảng USERS và RATINGS không có giá trị thiếu, trong khi bảng MOVIES chỉ xuất hiện một số lượng nhỏ giá trị thiếu ở thuộc tính poster_url. Do thuộc tính này không ảnh hưởng trực tiếp đến quá trình xây dựng mô hình gợi ý phim, các giá trị thiếu được giữ nguyên hoặc loại bỏ tùy theo mục đích trực quan hóa, không ảnh hưởng đến kết quả huấn luyện mô hình.
+P406 [Normal]: Sau khi tiền xử lý dữ liệu, tập dữ liệu được chia thành train (60%), validation (16%) và test (20%). Việc chia dữ liệu được thực hiện trên tập các cặp user–movie rating, đảm bảo rằng tập test hoàn toàn độc lập và không được sử dụng trong quá trình huấn luyện hay điều chỉnh mô hình.
+P407 [Normal]: Trích chọn và xây dựng đặc trưng
+P408 [Normal]: Trong bài toán hệ thống gợi ý phim, biến mục tiêu được xác định là mức độ yêu thích của người dùng đối với phim, được biểu diễn thông qua điểm đánh giá (Rating) mà người dùng gán cho phim trên thang điểm từ 1 đến 5. Biến này phản ánh trực tiếp sở thích của người dùng và đóng vai trò trung tâm trong việc huấn luyện và đánh giá các mô hình gợi ý.
+P409 [Normal]: Đối với bài toán dự đoán rating và gợi ý Top-N phim, dữ liệu được tiếp cận theo hướng Collaborative Filtering, trong đó trọng tâm là mối quan hệ giữa người dùng và phim thông qua lịch sử đánh giá.
+P410 [Normal]: Định nghĩa biến mục tiêu:
+Rating là điểm đánh giá của người dùng dành cho phim, nhận giá trị từ 1 đến 5, trong đó giá trị càng cao thể hiện mức độ yêu thích càng lớn.
+P411 [Normal]: Phân phối biến mục tiêu (Rating Distribution):
+Kết quả phân tích cho thấy các mức rating 3, 4 và 5 chiếm tỷ lệ cao, đặc biệt rating 4 là mức phổ biến nhất. Ngược lại, các mức rating thấp như 1 và 2 chiếm tỷ lệ nhỏ hơn. Điều này phản ánh xu hướng người dùng thường đánh giá phim ở mức trung bình khá đến tốt và dữ liệu rating có sự mất cân bằng nhẹ theo hướng tích cực.
+P412 [Normal]: Sau khi phân tích dữ liệu và loại bỏ các thuộc tính không cần thiết hoặc không ảnh hưởng trực tiếp đến chất lượng gợi ý, đề tài lựa chọn các đặc trưng chính sau để xây dựng mô hình:
+P413 [Normal]: UserID: Đại diện cho người dùng, dùng để xây dựng vector đặc trưng người dùng trong các mô hình Collaborative Filtering.
+P414 [Normal]: MovieID: Đại diện cho phim, dùng để xây dựng vector đặc trưng phim.
+P415 [Normal]: Rating: Biến mục tiêu, đồng thời là dữ liệu tương tác chính giữa người dùng và phim.
+P416 [Normal]: Genres: Thể loại phim, được sử dụng trong quá trình phân tích dữ liệu và có thể hỗ trợ mở rộng mô hình.
+P417 [Normal]: Age, Gender, Occupation: Các đặc trưng nhân khẩu học của người dùng, phục vụ cho phân tích hành vi và có thể dùng trong các hướng mở rộng hệ thống gợi ý.
+P418 [Normal]: Các đặc trưng trên được sử dụng để xây dựng ma trận người dùng – phim, là đầu vào chính cho các mô hình gợi ý như KNN-based Collaborative Filtering và Matrix Factorization. Việc lựa chọn các đặc trưng này giúp mô hình tập trung khai thác mối quan hệ đánh giá giữa người dùng và phim, đồng thời đảm bảo tính hiệu quả và phù hợp với mục tiêu của đề tài.
+P420 [Mục lớn]: Kết luận chương
+P421 [Normal]: Giới thiệu rõ nguồn gốc và cấu trúc của bộ dữ liệu MovieLens-1M with Posters and Metadata được thu thập từ nền tảng Kaggle, bao gồm các bảng dữ liệu chính liên quan đến người dùng, phim và điểm đánh giá.
+P422 [Normal]: Phân tích sơ bộ dữ liệu cho thấy bộ dữ liệu bao gồm cả thuộc tính định tính và định lượng, phản ánh đầy đủ thông tin về hành vi đánh giá của người dùng cũng như đặc điểm của phim.
+P423 [Normal]: Trình bày chi tiết các bước tiền xử lý dữ liệu cần thiết nhằm chuyển đổi dữ liệu thô thành tập dữ liệu sạch, bao gồm kiểm tra giá trị thiếu, lọc người dùng và phim có số lượng tương tác quá thấp, cũng như chuẩn hóa định dạng dữ liệu.
+P424 [Normal]: Đề cập đến quá trình trích chọn và xây dựng đặc trưng, tập trung vào các thuộc tính quan trọng như UserID, MovieID, Rating và một số đặc trưng mô tả, nhằm nâng cao hiệu quả của hệ thống gợi ý.
+P425 [Normal]: Dữ liệu sau quá trình xử lý đã sẵn sàng cho việc xây dựng và đánh giá các mô hình gợi ý phim như KNN-based Collaborative Filtering và Matrix Factorization trong chương tiếp theo.
+P427 [Heading 1]: XÂY DỰNG VÀ HUẤN LUYỆN MÔ HÌNH
+P428 [Mục lớn]: Quy trình xây dựng mô hình
+P429 [Nội dung]: Sau khi hoàn tất quá trình tiền xử lý và chuẩn bị dữ liệu, bước tiếp theo của đề tài là xây dựng mô hình hệ thống gợi ý phim. Tại thời điểm này, dữ liệu đã được làm sạch và bổ sung thêm một số đặc trưng cần thiết như biến liked (biểu thị mức độ yêu thích của người dùng đối với phim), rating_count (số lượt đánh giá của phim) và rating_count_log (biến log của số lượt đánh giá) nhằm phản ánh mức độ phổ biến của phim.
+P430 [Nội dung]: Tiếp theo, tập dữ liệu được chia thành ba phần gồm tập huấn luyện (training set) chiếm 60%, tập validation chiếm 16% và tập kiểm tra (test set) chiếm 20%. Tập huấn luyện được sử dụng để huấn luyện các mô hình gợi ý phim, trong khi tập validation hỗ trợ quá trình điều chỉnh siêu tham số và đánh giá trung gian. Tập kiểm tra được giữ hoàn toàn độc lập và chỉ sử dụng ở giai đoạn cuối nhằm đánh giá khả năng tổng quát hóa của mô hình trên dữ liệu chưa từng xuất hiện trong quá trình huấn luyện.
+P431 [Nội dung]: Cách chia dữ liệu này giúp đảm bảo quá trình xây dựng và đánh giá các mô hình gợi ý như KNN-based Collaborative Filtering và Matrix Factorization được thực hiện một cách khách quan, đồng thời hạn chế hiện tượng overfitting và phản ánh đúng hiệu quả của mô hình trong môi trường thực tế
+P434 [Heading 3]: 4.1.1. Chia tập train test 80 20
+P436 [Hình]: Hình 4. 1 Chia tập train test 80 20
+P437 [Heading 3]: 4.1.2. Chia user cho train test
+P439 [Hình]: Hình 4.  Chia user cho train test
+P440 [Heading 3]: 4.1.3. Khởi tạo mô hình train test KNN MF
+P441 [Heading 4]: 4.1.3.1 Mô hình train test KNN MF chưa xử lý mất cân bằng dữ liệu
+P443 [Hình]: Hình 4.  Mô hình train test KNN MF chưa xử lý mất cân bằng dữ liệu
+P446 [Heading 4]: 4.1.3.2 Mô hình train test KNN MFđã xử lý mất cân bằng dữ liệu
+P448 [Hình]: Hình 4.  Mô hình train test Logistic Regresion đã xử lý mất cân bằng dữ liệu
+P450 [Mục lớn]: Huấn luyện mô hình
+P451 [Heading 3]: 4.2.1. Huấn luyện mô hình trên tập huấn luyện (Train)
+P453 [Hình]: Hình 4.  Huấn luyện mô hình
+P455 [Normal]: Trong quá trình xây dựng hệ thống gợi ý phim, đề tài tiến hành xây dựng và đánh giá hai mô hình chính gồm KNN-based Collaborative Filtering và Matrix Factorization. Mỗi mô hình được huấn luyện và phân tích nhằm đánh giá khả năng khai thác mối quan hệ giữa người dùng và phim dựa trên dữ liệu đánh giá.
+P456 [Normal]: Đối với mô hình KNN (K-Nearest Neighbors), nghiên cứu sử dụng phương pháp item-based Collaborative Filtering. Mô hình được xây dựng dựa trên ma trận item–user, trong đó mỗi phim được biểu diễn bởi vector các đánh giá của người dùng. Thuật toán NearestNeighbors được sử dụng với số lượng láng giềng k bằng 10, thước đo độ tương đồng cosine và thuật toán brute-force để tính toán khoảng cách. Việc sử dụng cosine similarity giúp mô hình đo lường mức độ tương đồng giữa các phim dựa trên xu hướng đánh giá của người dùng, từ đó đề xuất các phim có nội dung và mức độ yêu thích tương tự.
+P457 [Normal]: Sau khi huấn luyện, mô hình KNN có khả năng tìm ra các phim tương đồng với một phim mục tiêu dựa trên lịch sử đánh giá, phù hợp cho bài toán gợi ý Top-N phim. Tuy nhiên, do bản chất dựa trên khoảng cách, mô hình KNN có thể gặp hạn chế về thời gian tính toán khi kích thước dữ liệu lớn và phụ thuộc nhiều vào mật độ dữ liệu đánh giá.
+P458 [Normal]: Bên cạnh đó, mô hình Matrix Factorization được sử dụng như một phương pháp nâng cao nhằm khắc phục hạn chế của KNN trong trường hợp dữ liệu thưa. Matrix Factorization phân rã ma trận người dùng – phim thành các vector đặc trưng tiềm ẩn, từ đó học được các yếu tố ẩn phản ánh sở thích của người dùng và đặc điểm của phim. Mô hình này cho phép dự đoán trực tiếp điểm rating cho các cặp người dùng – phim chưa từng xuất hiện trong dữ liệu huấn luyện.
+P459 [Normal]: Nhìn chung, việc huấn luyện và so sánh hai mô hình KNN và Matrix Factorization giúp đánh giá rõ ràng ưu và nhược điểm của từng phương pháp trong bài toán gợi ý phim. Trong khi KNN có ưu điểm là dễ triển khai và dễ diễn giải, Matrix Factorization thường cho hiệu quả gợi ý tốt hơn trên dữ liệu lớn và thưa. Kết quả này là cơ sở quan trọng cho việc lựa chọn mô hình phù hợp trong hệ thống gợi ý phim của đề tài.
+P461 [Heading 3]: 4.2.2. Đánh giá nhanh mô hình trên tập kiểm tra (Validation)
+P462 [Normal]: KNN :
+P465 [Hình]: Hình 4.  KNN trên tập validation
+P467 [Normal]: Sau khi huấn luyện các mô hình gợi ý phim, bước tiếp theo là đánh giá hiệu quả mô hình trên tập validation và test. Trong bài toán hệ thống gợi ý, việc đánh giá không dựa trên phân loại nhị phân như trong bài toán y tế, mà dựa trên khả năng gợi ý đúng các phim mà người dùng thực sự yêu thích.
+P468 [Normal]: Để phục vụ cho quá trình đánh giá, đề tài xây dựng hàm get_relevant_items, trong đó các phim được xem là relevant (phim phù hợp) nếu người dùng đánh giá phim đó lớn hơn hoặc bằng một ngưỡng nhất định. Trong nghiên cứu này, ngưỡng rating được lựa chọn là 4, tương ứng với các phim mà người dùng đánh giá cao và thể hiện mức độ yêu thích rõ rệt.
+P469 [Normal]: Cụ thể, với mỗi người dùng trong tập test, hàm này sẽ trích xuất danh sách các phim mà người dùng đã đánh giá từ 4 điểm trở lên. Danh sách này đóng vai trò là tập phim đúng (ground truth) để so sánh với danh sách phim được mô hình gợi ý.
+P470 [Normal]: Việc sử dụng ngưỡng rating giúp chuyển bài toán dự đoán điểm rating liên tục sang bài toán đánh giá gợi ý Top-N, từ đó cho phép sử dụng các chỉ số đánh giá phổ biến trong hệ thống gợi ý như Precisio, Recall và F1-score. Cách tiếp cận này giúp đánh giá trực tiếp khả năng của mô hình trong việc gợi ý đúng các phim mà người dùng thực sự quan tâm.
+P471 [Normal]: Nhìn chung, phương pháp đánh giá dựa trên ngưỡng rating và danh sách phim relevant giúp phản ánh sát hơn hành vi thực tế của người dùng, đồng thời tạo cơ sở nhất quán để so sánh hiệu quả giữa các mô hình gợi ý phim như KNN và Matrix Factorization trong đề tài.
+P472 [Mục lớn]: Kết luận chương
+P473 [Nội dung]: Chương này đã trình bày quy trình xây dựng và huấn luyện ba mô hình học máy Chương này đã trình bày quy trình xây dựng và huấn luyện các mô hình hệ thống gợi ý phim, cụ thể là KNN-based Collaborative Filtering và Matrix Factorization. Các bước từ tiền xử lý và chia dữ liệu theo người dùng, xây dựng mô hình, lựa chọn và điều chỉnh các siêu tham số, cho đến phương pháp đánh giá mô hình dựa trên các chỉ số Precisio, Recall và F1 đã được mô tả chi tiết. Đây là cơ sở quan trọng để phân tích kết quả thực nghiệm, so sánh hiệu quả giữa các mô hình gợi ý và rút ra các nhận xét, đánh giá trong chương tiếp theo.
+P477 [Heading 1]: ĐÁNH GIÁ VÀ THẢO LUẬN KẾT QUẢ
+P478 [Mục lớn]: Tiêu chí đánh giá
+P479 [Nội dung]: Để đánh giá hiệu quả của các mô hình trong bài toán hệ thống gợi ý phim, đề tài sử dụng các tiêu chí đánh giá phổ biến trong lĩnh vực recommendation system, bao gồm Precisio, Recal và F1. Các chỉ số này tập trung đánh giá chất lượng của danh sách phim được gợi ý cho người dùng thay vì chỉ đánh giá độ chính xác của việc dự đoán điểm rating đơn lẻ.
+P480 [Nội dung]: Precision phản ánh mức độ chính xác của hệ thống gợi ý, cho biết trong số K phim được đề xuất cho người dùng, có bao nhiêu phim thực sự là những phim mà người dùng yêu thích. Chỉ số này thể hiện khả năng mô hình tránh gợi ý các phim không phù hợp.
+P481 [Nội dung]: Recall đo lường khả năng bao phủ của hệ thống gợi ý, cho biết mô hình có gợi ý được bao nhiêu phim đúng trong tổng số các phim mà người dùng thực sự quan tâm. Chỉ số này phản ánh mức độ đầy đủ của danh sách gợi ý.
+P482 [Nội dung]: F là trung bình điều hòa giữa Precision và Recall, giúp đánh giá cân bằng giữa độ chính xác và độ bao phủ của hệ thống gợi ý. Chỉ số này đặc biệt quan trọng trong bối cảnh dữ liệu gợi ý phim thường không đồng đều, khi mỗi người dùng chỉ yêu thích một số ít phim trong tổng số phim có sẵn.
+P483 [Nội dung]: Các chỉ số trên được sử dụng đồng thời nhằm đảm bảo việc đánh giá các mô hình gợi ý phim được thực hiện một cách toàn diện và khách quan, đồng thời tạo cơ sở nhất quán để so sánh hiệu quả giữa các mô hình như KNN-based Collaborative Filtering và Matrix Factorization trong đề tài.
+P485 [Mục lớn]: So sánh mô hình
+P486 [Nội dung]: Kết quả so sánh các mô hình gợi ý phim (KNN và Matrix Factorization)
+P487 [Nội dung]: Sau khi huấn luyện và điều chỉnh các siêu tham số trên tập validation, các mô hình gợi ý phim được đánh giá trên tập test độc lập nhằm đảm bảo tính khách quan và phản ánh đúng khả năng tổng quát hóa của hệ thống. Việc đánh giá tập trung vào các chỉ số Precision, Recal và F1, với mục tiêu ưu tiên khả năng gợi ý đúng các phim mà người dùng thực sự yêu thích.
+P488 [Nội dung]: 1. Recall (Tiêu chí ưu tiên chính)
+P489 [Nội dung]: Matrix Factorization đạt Recall cao nhất, cho thấy mô hình có khả năng bao phủ tốt hơn các phim mà người dùng thực sự quan tâm trong danh sách gợi ý. Điều này phản ánh ưu thế của Matrix Factorization trong việc khai thác các yếu tố tiềm ẩn từ dữ liệu đánh giá và xử lý hiệu quả dữ liệu thưa.
+P490 [Nội dung]: Mô hình KNN-based Collaborative Filtering có Recal thấp hơn so với Matrix Factorization. Điều này cho thấy KNN có xu hướng gợi ý chính xác các phim tương tự, nhưng phạm vi bao phủ các phim yêu thích của người dùng còn hạn chế hơn.
+P491 [Nội dung]: Trong bối cảnh hệ thống gợi ý phim, Recall cao đồng nghĩa với việc giảm khả năng bỏ sót các phim mà người dùng có thể thích, do đó Matrix Factorization thể hiện ưu thế rõ rệt.
+P492 [Nội dung]: 2. Precisio và F (Sự đánh đổi khi mở rộng phạm vi gợi ý)
+P493 [Nội dung]: Cả hai mô hình đều có Precision ở mức trung bình, phản ánh thực tế rằng khi danh sách gợi ý mở rộng để tăng Recall, số lượng phim chưa thực sự phù hợp trong Top-K cũng tăng theo.
+P494 [Nội dung]: Matrix Factorization vẫn duy trì F1 cao hơn, cho thấy mô hình đạt được sự cân bằng tốt hơn giữa độ chính xác và độ bao phủ. Ngược lại, KNN có F1 thấp hơn, phản ánh rằng việc tăng số lượng phim gợi ý làm giảm mức độ chính xác tương đối của mô hình này.
+P495 [Nội dung]: Đây là sự đánh đổi có thể chấp nhận trong bài toán gợi ý phim, nơi mục tiêu chính là mở rộng khả năng khám phá nội dung cho người dùng thay vì chỉ tập trung vào một số ít phim có độ tương đồng rất cao.
+P496 [Nội dung]: 3. Nhận xét tổng thể về hiệu năng mô hình
+P497 [Nội dung]: Kết quả đánh giá cho thấy cả hai mô hình đều có khả năng gợi ý phim ở mức chấp nhận được, tuy nhiên Matrix Factorization thể hiện hiệu năng tổng thể tốt hơn trên tập test. Mô hình này không chỉ đạt Recall cao hơn mà còn duy trì được F1 ổn định, cho thấy khả năng gợi ý hiệu quả và nhất quán hơn trong môi trường dữ liệu lớn và thưa.
+P498 [Nội dung]: Kết luận
+P499 [Nội dung]: Từ kết quả so sánh, Matrix Factorization được lựa chọn là mô hình tối ưu cho hệ thống gợi ý phim trong đề tài, nhờ khả năng bao phủ tốt các phim người dùng yêu thích trong khi vẫn giữ được sự cân bằng hợp lý giữa Precision và Recall. Mô hình KNN đóng vai trò quan trọng như một phương pháp baseline, giúp so sánh và làm rõ ưu điểm của phương pháp phân rã ma trận trong bài toán gợi ý phim.
+P500 [Mục lớn]: Nhận xét và thảo luận
+P501 [Nội dung]: Hiệu năng vượt trội của Matrix Factorization được thể hiện rõ trong quá trình đánh giá mô hình. Trong hai mô hình gợi ý phim được thử nghiệm, Matrix Factorization cho thấy hiệu năng tổng thể tốt hơn so với KNN-based Collaborative Filtering. Mô hình đạt Recal cao hơn, cho thấy khả năng bao phủ tốt hơn các bộ phim mà người dùng thực sự yêu thích trong danh sách gợi ý. Kết quả này phản ánh khả năng khai thác hiệu quả các yếu tố tiềm ẩn từ dữ liệu đánh giá và sự phù hợp của Matrix Factorization đối với bộ dữ liệu lớn và thưa như MovieLens.
+P502 [Nội dung]: Trong chiến lược xây dựng hệ thống gợi ý phim, nhóm nghiên cứu ưu tiên khả năng bao phủ nội dung thay vì chỉ tập trung vào độ chính xác tuyệt đối. Việc chấp nhận Precision ở mức trung bình là sự đánh đổi có chủ đích, bởi khi mở rộng danh sách gợi ý nhằm tăng Recall, số lượng phim chưa hoàn toàn phù hợp có thể gia tăng. Tuy nhiên, cách tiếp cận này giúp giảm nguy cơ bỏ sót các bộ phim tiềm năng mà người dùng có thể quan tâm, từ đó nâng cao trải nghiệm khám phá nội dung.
+P503 [Nội dung]: Dựa trên các kết quả thực nghiệm, Matrix Factorization được lựa chọn là mô hình chính thức cho hệ thống gợi ý phim của đề tài nhờ duy trì được hiệu năng ổn định và sự cân bằng hợp lý giữa Recall và F1. Trong các hướng phát triển tiếp theo, nghiên cứu có thể tập trung vào việc điều chỉnh số lượng phim gợi ý, kết hợp thêm các đặc trưng nội dung phim hoặc thông tin người dùng nhằm cải thiện Precision và giảm số lượng phim được gợi ý nhưng chưa thực sự phù hợp.
+P504 [Mục lớn]: Kết luận chương
+P505 [Nội dung]: Chương này đã trình bày chi tiết kết quả đánh giá hiệu năng của các mô hình hệ thống gợi ý phim, cụ thể là KNN-based Collaborative Filtering và Matrix Factorization, với mục tiêu xây dựng một hệ thống gợi ý hiệu quả và phù hợp với hành vi người dùng. Dựa trên các kết quả thực nghiệm thu được từ tập dữ liệu MovieLens, có thể rút ra một số kết luận chính như sau.
+P506 [Nội dung]: Thứ nhất, kết quả cho thấy sự khác biệt rõ rệt về hiệu năng giữa các mô hình gợi ý. Trong khi KNN-based Collaborative Filtering có ưu điểm là dễ triển khai và dễ diễn giải, mô hình này thường cho Recall thấp hơn do phạm vi gợi ý còn hạn chế. Ngược lại, Matrix Factorization thể hiện ưu thế vượt trội trong việc tối ưu hóa khả năng bao phủ nội dung, thể hiện qua giá trị Recall cao hơn, cho thấy mô hình có khả năng gợi ý được nhiều phim mà người dùng thực sự yêu thích hơn.
+P507 [Nội dung]: Thứ hai, với đặc thù của bài toán hệ thống gợi ý phim, việc bỏ sót các phim tiềm năng mà người dùng có thể quan tâm sẽ làm giảm trải nghiệm sử dụng. Do đó, chiến lược ưu tiên Recall cao được xem là phù hợp hơn so với việc chỉ tập trung vào Precision. Trong bối cảnh này, Matrix Factorization được xác định là mô hình phù hợp nhất nhờ khả năng khai thác các yếu tố tiềm ẩn trong dữ liệu và duy trì hiệu năng ổn định trên tập kiểm tra.
+P508 [Nội dung]: Tuy nhiên, một hạn chế đáng chú ý của hệ thống gợi ý là Precision chưa đạt mức cao, đồng nghĩa với việc danh sách gợi ý vẫn có thể chứa một số phim chưa thực sự phù hợp với người dùng. Đây là sự đánh đổi phổ biến trong các hệ thống gợi ý và là thách thức thực tế cần được giải quyết thông qua các hướng cải tiến như kết hợp thêm thông tin nội dung phim, đặc trưng người dùng hoặc tinh chỉnh số lượng phim được gợi ý.
+P509 [Nội dung]: Tóm lại, dựa trên cơ sở thực nghiệm và các chỉ số đánh giá, Matrix Factorization được lựa chọn là mô hình chính để xây dựng hệ thống gợi ý phim trong đề tài. Kết quả này đóng vai trò là tiền đề quan trọng cho việc đề xuất các hướng cải tiến và giải pháp triển khai thực tế, sẽ được trình bày trong chương tiếp theo.
+P520 [Heading 1]: KẾT LUẬN
+P521 [Normal]: Kết quả đạt được
+P523 [No Spacing]: Sau quá trình nghiên cứu lý thuyết và thực nghiệm trên bộ dữ liệu MovieLens-1M with Posters and Metadata, đồ án đã hoàn thành các mục tiêu đề ra và đạt được những kết quả cụ thể như sau.
+P525 [No Spacing]: Thứ nhất, đồ án đã xây dựng thành công quy trình xử lý và chuẩn hóa dữ liệu cho hệ thống gợi ý phim. Nhóm đã thực hiện đầy đủ các bước từ tiền xử lý dữ liệu, kiểm tra và xử lý giá trị thiếu, phân tích khám phá dữ liệu (EDA) đến trích chọn các đặc trưng quan trọng như UserID, MovieID, Rating, Genres và một số đặc trưng nhân khẩu học của người dùng. Dữ liệu sau xử lý đảm bảo tính nhất quán và phù hợp để xây dựng các mô hình gợi ý dựa trên Collaborative Filtering.
+P527 [No Spacing]: Thứ hai, thông qua việc xây dựng và so sánh hai mô hình gợi ý phim là KNN-based Collaborative Filtering và Matrix Factorization, đồ án đã xác định Matrix Factorization là mô hình có hiệu năng vượt trội hơn. Với chiến lược ưu tiên khả năng bao phủ nội dung, mô hình này đạt Recal cao hơn và duy trì được sự cân bằng tốt giữa Precision và F1, cho thấy khả năng gợi ý hiệu quả các bộ phim mà người dùng thực sự quan tâm.
+P529 [No Spacing]: Thứ ba, kết quả thực nghiệm cho thấy hệ thống gợi ý được xây dựng có ý nghĩa thực tiễn rõ rệt. Mô hình Matrix Factorization có đủ năng lực để hoạt động như một hệ thống gợi ý cá nhân hóa, hỗ trợ người dùng khám phá các bộ phim phù hợp với sở thích dựa trên lịch sử đánh giá, từ đó nâng cao trải nghiệm sử dụng và giảm thời gian tìm kiếm nội dung.
+P531 [No Spacing]: Hạn chế và hướng phát triển
+P532 [No Spacing]: Bên cạnh những kết quả đạt được, đồ án vẫn còn tồn tại một số hạn chế. Cụ thể, Precision@K của hệ thống chưa đạt mức cao, đồng nghĩa với việc danh sách gợi ý vẫn có thể bao gồm một số phim chưa thực sự phù hợp với người dùng. Đây là hạn chế phổ biến của các hệ thống gợi ý dựa thuần túy trên Collaborative Filtering.
+P534 [No Spacing]: Để khắc phục hạn chế này và nâng cao tính ứng dụng của hệ thống, nhóm đề xuất một số hướng phát triển trong tương lai. Thứ nhất, có thể mở rộng và chuyên sâu hóa dữ liệu bằng cách tích hợp thêm các thông tin nội dung của phim như mô tả chi tiết, đạo diễn, diễn viên hoặc đánh giá văn bản từ người dùng, nhằm giúp mô hình phân biệt tốt hơn mức độ phù hợp của từng bộ phim. Thứ hai, có thể thử nghiệm các kỹ thuật học máy nâng cao, chẳng hạn như kết hợp Matrix Factorization với các mô hình Content-based Filtering theo hướng Hybrid Recommendation, hoặc áp dụng các mô hình Deep Learning để khai thác các đặc trưng tiềm ẩn phức tạp hơn từ dữ liệu người dùng và phim.
+P536 [No Spacing]: Nhìn chung, kết quả đạt được của đồ án là nền tảng quan trọng cho việc tiếp tục hoàn thiện và triển khai hệ thống gợi ý phim trong các ứng dụng thực tế, đồng thời mở ra nhiều hướng nghiên cứu và phát triển trong tương lai.
+P538 [Tiêu đề]: TÀI LIỆU THAM KHẢO
+
+=== TABLES ===
+
+Table 0 (rows=2, cols=1):
+  R0: BỘ GIÁO DỤC VÀ ĐÀO TẠO TRƯỜNG ĐẠI HỌC SƯ PHẠM KỸ THUẬT HƯNG YÊN     BÀI TẬP LỚN  MÔN: TRÍ TUỆ NHÂN TẠO  Xây dựng hệ thống đề xuất phim (Matrix Factorization, KNN) NGÀNH: KHOA HỌC MÁY TÍNH CHUYÊN NGÀNH: TRÍ TUỆ NHÂN TẠO VÀ KHOA HỌC DỮ LIỆU  SINH VIÊN:  Mai Hoàng Anh Nguyễn Tuấn Anh  MÃ LỚP: 124231 GIẢNG VIÊN HƯỚNG DẪN: THS.NGUYỄN HOÀNG ĐIỆP    HƯNG YÊN – 2025
+  R1: BỘ GIÁO DỤC VÀ ĐÀO TẠO TRƯỜNG ĐẠI HỌC SƯ PHẠM KỸ THUẬT HƯNG YÊN     BÀI TẬP LỚN MÔN: TRÍ TUỆ NHÂN TẠO  XÂY DỰNG HỆ THỐNG ĐỀ XUẤT PHIM (Matrix Factorization, KNN)  NGÀNH: KHOA HỌC MÁY TÍNH CHUYÊN NGÀNH: TRÍ TUỆ NHÂN TẠO VÀ KHOA HỌC DỮ LIỆU  SINH VIÊN:  Mai Hoàng Anh                           Nguyễn Tuấn Anh MÃ LỚP: 124231 GIẢNG VIÊN HƯỚNG DẪN: THS.NGUYỄN HOÀNG ĐIỆP    HƯNG YÊN – 2025
+
+Table 1 (rows=15, cols=3):
+  R0: Từ viết tắt | Nghĩa tiếng Anh | Nghĩa tiếng Việt
+  R1:  |  | 
+  R2:  |  | 
+  R3:  |  | 
+  R4:  |  | 
+  R5:  |  | 
+  R6:  |  | 
+  R7:  |  | 
+  R8:  |  | 
+  R9:  |  | 
+  R10:  |  | 
+  R11:  |  | 
+  R12:  |  | 
+  R13:  |  | 
+  R14:  |  | 
+
+Table 2 (rows=14, cols=3):
+  R0: Tên thuộc tính | Mô tả | Loại dữ liệu
+  R1: UserID | Mã định danh duy nhất của người dùng | Categorical - Nominal
+  R2: Gender | Giới tính của người dùng (M/F) | Categorical - Binary
+  R3: Age | Nhóm độ tuổi của người dùng | Categorical - Ordinal
+  R4: Occupation | Nghề nghiệp của người dùng (được mã hóa) | Categorical - Nominal
+  R5: ZipCode | Mã bưu chính khu vực sinh sống | Nominal
+  R6: MovieID | Mã định danh duy nhất của bộ phim | Nominal
+  R7: Title | Tên bộ phim kèm năm phát hành | Nominal
+  R8: Genres | Thể loại của phim (có thể gồm nhiều thể loại) | Nominal (Multi-label)
+  R9: Rating | Điểm đánh giá của người dùng cho phim (từ 1 đến 5) | Numerical - Discrete
+  R10: Timestamp | Thời điểm người dùng thực hiện đánh giá | Numerical - Temporal
+  R11: PosterURL | Đường dẫn hình ảnh poster của phim | Text
+  R12: Overview | Mô tả nội dung ngắn gọn của phim | Text
+  R13: ReleaseYear | Năm phát hành của phim | Numerical - Discrete
+
+Table 3 (rows=7, cols=2):
+  R0: [1] | Nguyễn Văn Hoàng. Matplotlib: Giới thiệu về Matplotlib. Viblo.asia. Truy cập tại: https://viblo.asia
+  R1: [2] | Nguyễn Văn Hoàng. Pandas: Giới thiệu về Pandas. Viblo.asia. Truy cập tại: https://viblo.asia
+  R2: [3] | Nguyễn Văn Hoàng. Numpy: Giới thiệu về Numpy. Viblo.asia. Truy cập tại: https://viblo.asia
+  R3: [4] | Ng, A. (2024). Machine Learning. Coursera. Truy cập tại: https://www.coursera.org/learn/machine-learning
+  R4: [5] | Scikit-learn Team. (2024). Scikit-learn Documentation. Truy cập tại: https://scikit-learn.org/stable/index.html
+  R5:  | 
+  R6:  | 

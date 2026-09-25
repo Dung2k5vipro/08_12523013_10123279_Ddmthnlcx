@@ -20,7 +20,7 @@
     "r2": 0.9583,
     "r2_train": 0.9677
   },
-  "trained_at": "2026-09-24 23:14:27",
+  "trained_at": "2026-09-25 17:05:50",
   "library_versions": {
     "python": "3.14.3",
     "scikit_learn": "1.9.1",
