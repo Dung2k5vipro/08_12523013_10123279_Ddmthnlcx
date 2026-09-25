@@ -1,1 +1,30 @@
-{}
+{
+  "model_name": "svr",
+  "model_version": "1.0.0",
+  "problem_type": "regression",
+  "target": "fuel_consumption_comb",
+  "target_unit": "L/100 km",
+  "features": [
+    "model_year",
+    "make",
+    "vehicle_class",
+    "engine_size",
+    "cylinders",
+    "transmission",
+    "fuel_type"
+  ],
+  "metrics": {
+    "mae": 0.4293,
+    "mse": 0.4222,
+    "rmse": 0.6498,
+    "r2": 0.9583,
+    "r2_train": 0.9677
+  },
+  "trained_at": "2026-09-24 23:14:27",
+  "library_versions": {
+    "python": "3.14.3",
+    "scikit_learn": "1.9.1",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6"
+  }
+}

@@ -192,7 +192,21 @@ Frontend chỉ gọi Backend qua `NEXT_PUBLIC_API_URL`; không gọi trực ti�
 
 ## Hợp đồng với AI Service
 
-Backend gửi `POST /predict` tới `AI_SERVICE_URL`, forward đúng 7 field snake_case và header `X-Request-ID`. AI Service cần trả tối thiểu:
+Backend gửi `POST /predict` tới `AI_SERVICE_URL` với 7 field snake_case nằm trong thuộc tính `features`, đồng thời forward header `X-Request-ID`. AI Service cần trả tối thiểu:
+
+```json
+{
+  "features": {
+    "model_year": 2020,
+    "make": "Toyota",
+    "vehicle_class": "SUV",
+    "engine_size": 2.0,
+    "cylinders": 4,
+    "transmission": "Automatic",
+    "fuel_type": "X"
+  }
+}
+```
 
 ```json
 {

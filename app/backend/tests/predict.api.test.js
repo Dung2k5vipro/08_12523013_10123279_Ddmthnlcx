@@ -48,7 +48,8 @@ describe('POST /api/predict', () => {
 		await request(app).post('/api/predict').set('X-Request-ID', 'forwarded-request').send(VALID_BODY);
 
 		expect(axiosRequest).toHaveBeenCalledWith(expect.objectContaining({
-			headers: expect.objectContaining({ 'X-Request-ID': 'forwarded-request' })
+			headers: expect.objectContaining({ 'X-Request-ID': 'forwarded-request' }),
+			data: { features: VALID_BODY }
 		}));
 	});
 

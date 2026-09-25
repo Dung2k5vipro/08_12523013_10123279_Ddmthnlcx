@@ -66,7 +66,7 @@ async function predict(features, requestId) {
 		result[field] = features[field];
 		return result;
 	}, {});
-	const data = await request('post', '/predict', requestId, payload);
+	const data = await request('post', '/predict', requestId, { features: payload });
 
 	if (!Number.isFinite(data?.prediction) || !data?.model_version) {
 		throw createServiceError('AI Service trả về dữ liệu dự đoán không hợp lệ', 502, 'AI_SERVICE_ERROR', requestId);

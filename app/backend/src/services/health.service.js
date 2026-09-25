@@ -8,7 +8,7 @@ async function getSystemHealth(requestId) {
 
 	try {
 		const health = await aiClient.getHealth(requestId);
-		aiService = { status: 'up', ...health };
+		aiService = { ...health, status: 'up' };
 	} catch (error) {
 		aiService = { status: 'down' };
 	}
