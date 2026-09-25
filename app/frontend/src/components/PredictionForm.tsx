@@ -57,7 +57,7 @@ function getInitialExample(fieldsConfig: FieldsConfig | null): FormValues {
     vehicle_class: 'SUV',
     engine_size: fieldsConfig ? String(fieldsConfig.limits.engine_size.min) : '',
     cylinders: fieldsConfig ? String(fieldsConfig.limits.cylinders.min) : '',
-    transmission: 'Automatic',
+    transmission: 'AS6',
     fuel_type: 'X',
   };
 }
@@ -198,7 +198,7 @@ export default function PredictionForm({
         {renderField('vehicle_class', 'text', 'Ví dụ: SUV')}
         {renderField('engine_size', 'number', 'Ví dụ: 2.0', '0.1')}
         {renderField('cylinders', 'number', 'Ví dụ: 4', '1')}
-        {renderField('transmission', 'text', 'Ví dụ: Automatic')}
+        {renderField('transmission', 'text', 'Ví dụ: AS6')}
         <div className={styles.field}>
           <label htmlFor="fuel_type">Loại nhiên liệu <span className={styles.hint}>(X: xăng thường, Z: cao cấp)</span></label>
           <input

@@ -1,15 +1,16 @@
-.form { display: grid; gap: 1.5rem; }
+.form { display: grid; gap: 1.35rem; }
 .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
-.field { display: grid; gap: 0.4rem; }
-.field label { font-weight: 700; }
-.field input { width: 100%; border: 1px solid var(--color-border); border-radius: var(--radius-sm); background: var(--color-surface); color: var(--color-text); padding: 0.7rem 0.8rem; }
+.field { display: grid; gap: 0.42rem; }
+.field label { color: var(--color-ink); font-size: 0.86rem; font-weight: 700; }
+.field input { width: 100%; border: 1px solid var(--color-border); border-radius: var(--radius-sm); background: #fff; color: var(--color-text); padding: 0.78rem 0.85rem; transition: border-color 0.2s ease, box-shadow 0.2s ease; }
+.field input:focus { border-color: var(--color-primary); box-shadow: 0 0 0 4px rgba(20, 125, 114, 0.12); outline: 0; }
 .field input[aria-invalid="true"] { border-color: #c94444; }
 .hint, .configNotice { color: var(--color-muted); font-size: 0.86rem; font-weight: 400; }
 .error { margin: 0; color: #b52d2d; font-size: 0.85rem; }
-.actions { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; }
-.actions button { min-height: 2.7rem; border-radius: var(--radius-sm); padding: 0.6rem 1rem; cursor: pointer; }
+.actions { display: flex; flex-wrap: wrap; gap: 0.7rem; align-items: center; border-top: 1px solid var(--color-border); padding-top: 1.2rem; }
+.actions button { min-height: 2.8rem; border-radius: var(--radius-sm); padding: 0.65rem 1rem; cursor: pointer; font-weight: 700; }
 .actions button:disabled { cursor: not-allowed; opacity: 0.6; }
-.primaryButton { display: inline-flex; gap: 0.5rem; align-items: center; border: 0; background: var(--color-primary); color: #fff; }
+.primaryButton { display: inline-flex; gap: 0.5rem; align-items: center; border: 0; background: var(--color-ink); color: #fff; box-shadow: 0 0.45rem 1rem rgba(20, 58, 57, 0.18); }
 .secondaryButton { border: 1px solid var(--color-border); background: var(--color-surface); color: var(--color-text); }
 .ghostButton { border: 0; background: transparent; color: var(--color-primary-strong); }
 @media (max-width: 640px) { .grid { grid-template-columns: 1fr; } .actions { align-items: stretch; flex-direction: column; } .actions button { width: 100%; } }

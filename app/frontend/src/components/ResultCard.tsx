@@ -1,6 +1,5 @@
 'use client';
 
-import { useState } from 'react';
 import type { PredictionResponse } from '@/types';
 import { CONSUMPTION_THRESHOLDS } from '@/utils/constants';
 import { formatConsumption, formatDateTime } from '@/utils/format';
@@ -15,19 +14,12 @@ function getRating(value: number): { label: string; className: string } {
 }
 
 export default function ResultCard({ result }: ResultCardProps) {
-  const [copied, setCopied] = useState(false);
-
   if (!result) {
     return <section className={styles.empty} aria-live="polite"><strong>Chưa có kết quả</strong><span>Nhập thông tin xe và bấm Dự đoán.</span></section>;
   }
 
   const rating = getRating(result.prediction);
   const meterWidth = Math.min(100, (result.prediction / (CONSUMPTION_THRESHOLDS.high * 1.5)) * 100);
-  const copyRequestId = async () => {
-    await navigator.clipboard.writeText(result.request_id);
-    setCopied(true);
-    window.setTimeout(() => setCopied(false), 1600);
-  };
 
   return (
     <section className={styles.card} aria-live="polite">
@@ -36,7 +28,6 @@ export default function ResultCard({ result }: ResultCardProps) {
       <div className={`${styles.rating} ${rating.className}`}><span>{rating.label}</span><div className={styles.meter} role="meter" aria-label={`Mức tiêu hao ${rating.label}`} aria-valuemin={0} aria-valuemax={100} aria-valuenow={Math.round(meterWidth)}><span style={{ width: `${meterWidth}%` }} /></div><small>Ngưỡng tham khảo, không thay thế đánh giá thực tế.</small></div>
       <dl className={styles.details}>
         <div><dt>Phiên bản model</dt><dd>{result.model_version}</dd></div>
-        <div><dt>Request ID</dt><dd className={styles.requestId}>{result.request_id}<button type="button" onClick={copyRequestId} aria-label="Sao chép request ID">{copied ? 'Đã chép' : 'Sao chép'}</button></dd></div>
         <div><dt>Thời gian</dt><dd>{formatDateTime(result.created_at)}</dd></div>
       </dl>
     </section>

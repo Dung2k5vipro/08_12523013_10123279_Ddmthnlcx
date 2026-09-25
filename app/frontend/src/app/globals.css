@@ -1,16 +1,17 @@
 :root {
-  --color-background: #f3f8f6;
-  --color-surface: #ffffff;
-  --color-text: #16312b;
-  --color-muted: #5f7770;
-  --color-primary: #087f8c;
-  --color-primary-strong: #05616b;
-  --color-accent: #6cae75;
-  --color-border: #c9ded8;
+  --color-background: #eef3f0;
+  --color-surface: #fffdf8;
+  --color-text: #18332f;
+  --color-muted: #637670;
+  --color-primary: #147d72;
+  --color-primary-strong: #0a5b55;
+  --color-accent: #e4a84d;
+  --color-border: #d6e1db;
+  --color-ink: #143a39;
   --space-unit: 0.5rem;
-  --radius-sm: 0.4rem;
-  --radius-md: 0.75rem;
-  --shadow-soft: 0 0.75rem 2rem rgba(17, 72, 61, 0.1);
+  --radius-sm: 0.55rem;
+  --radius-md: 1rem;
+  --shadow-soft: 0 1rem 2.5rem rgba(26, 65, 57, 0.09);
 }
 
 * {
@@ -26,9 +27,11 @@ body {
   min-width: 320px;
   background: var(--color-background);
   color: var(--color-text);
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "Avenir Next", "Helvetica Neue", sans-serif;
   line-height: 1.5;
 }
+
+h1, h2, h3, strong { font-family: Georgia, "Times New Roman", serif; }
 
 button,
 input,
@@ -43,9 +46,9 @@ textarea {
 }
 
 .container {
-  width: min(100% - 2rem, 1100px);
+  width: min(100% - 2rem, 1180px);
   margin: 0 auto;
-  padding: calc(var(--space-unit) * 8) 0;
+  padding: calc(var(--space-unit) * 7) 0;
 }
 
 @media (prefers-color-scheme: dark) {
