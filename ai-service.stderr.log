@@ -1,0 +1,10 @@
+INFO:     Will watch for changes in these directories: ['D:\\hocmaycoban_btl\\ai-models']
+INFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)
+INFO:     Started reloader process [19392] using StatReload
+INFO:     Started server process [20936]
+INFO:     Waiting for application startup.
+2026-09-26 11:50:55,084 [INFO] [AI-SERVICE] Initializing application startup...
+INFO:     Application startup complete.
+2026-09-26 11:51:09,752 [INFO] req=d8850d6d-d09b-4b52-8b2b-29257f8c33ac prediction=8.28 unit='L/100 km' version=1.0.0 time=75.47ms
+2026-09-26 11:52:25,116 [INFO] req=4f94b286-4ded-47d5-91da-b3dcf09a1e6b prediction=9.97 unit='L/100 km' version=1.0.0 time=13.62ms
+2026-09-26 11:53:47,454 [INFO] req=4b0baf2a-7054-4c4e-bd7a-669c4247931c prediction=18.13 unit='L/100 km' version=1.0.0 time=11.81ms
