@@ -1,0 +1,15 @@
+INFO:     Will watch for changes in these directories: ['D:\\hocmaycoban_btl\\ai-models']
+INFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)
+INFO:     Started reloader process [19392] using StatReload
+INFO:     Started server process [20936]
+INFO:     Waiting for application startup.
+2026-09-26 11:50:55,084 [INFO] [AI-SERVICE] Initializing application startup...
+INFO:     Application startup complete.
+2026-09-26 11:51:09,752 [INFO] req=d8850d6d-d09b-4b52-8b2b-29257f8c33ac prediction=8.28 unit='L/100 km' version=1.0.0 time=75.47ms
+2026-09-26 11:52:25,116 [INFO] req=4f94b286-4ded-47d5-91da-b3dcf09a1e6b prediction=9.97 unit='L/100 km' version=1.0.0 time=13.62ms
+2026-09-26 11:53:47,454 [INFO] req=4b0baf2a-7054-4c4e-bd7a-669c4247931c prediction=18.13 unit='L/100 km' version=1.0.0 time=11.81ms
+2026-09-26 12:14:41,150 [INFO] req=d10c6de3-b637-48db-95f4-6de883c9eee2 prediction=12.79 unit='L/100 km' version=1.0.0 time=12.13ms
+2026-09-26 12:20:33,559 [INFO] req=72a4666e-4eed-45d7-8954-796ff9b4e229 prediction=9.97 unit='L/100 km' version=1.0.0 time=18.51ms
+2026-09-26 15:42:38,201 [INFO] req=e1c102b3-ece0-43f4-a2ea-5355ae00aa5d prediction=11.34 unit='L/100 km' version=1.0.0 time=18.05ms
+2026-09-26 15:42:47,478 [INFO] req=ce504873-ad8e-42b8-8ace-94060e0fd7a2 prediction=10.17 unit='L/100 km' version=1.0.0 time=14.06ms
+2026-09-26 15:42:51,804 [INFO] req=29b855ac-a212-4f3b-a516-b09fd907506f prediction=11.39 unit='L/100 km' version=1.0.0 time=11.09ms
