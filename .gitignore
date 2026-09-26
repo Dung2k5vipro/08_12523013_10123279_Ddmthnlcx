@@ -1,4 +1,4 @@
-node_modules/
+Get-Process git -ErrorAction SilentlyContinuenode_modules/
 .venv/
 venv/
 .env
