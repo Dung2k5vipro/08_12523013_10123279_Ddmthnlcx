@@ -497,7 +497,7 @@ curl -X POST http://localhost:8001/predict \
 
 ## ⚙️ Cấu hình Biến môi trường (.env)
 
-Tạo file `.env` tại thư mục gốc của dự án (`/d:/hocmaycoban_btl/.env`) dựa trên `.env.example`:
+Tạo file `.env` tại thư mục gốc của dự án (`.env`) dựa trên `.env.example`:
 
 ```ini
 # ============================================
@@ -557,7 +557,7 @@ Chỉ với một câu lệnh duy nhất, toàn bộ 4 containers (**MongoDB**, 
 
 ```bash
 # 1. Clone source code và vào thư mục dự án
-cd d:\hocmaycoban_btl
+cd fuel-consumption-prediction
 
 # 2. Tạo file .env từ mẫu (nếu chưa có)
 copy .env.example .env
