@@ -91,7 +91,11 @@ export async function apiRequest<T>(
   }
 
   try {
-    const response = await fetch(`${env.NEXT_PUBLIC_API_URL}${path}`, {
+    const apiUrl = env.NEXT_PUBLIC_API_URL;
+    const requestPath = apiUrl.endsWith('/api') && path.startsWith('/api/')
+      ? path.slice('/api'.length)
+      : path;
+    const response = await fetch(`${apiUrl}${requestPath}`, {
       method,
       headers: {
         'Content-Type': 'application/json',
