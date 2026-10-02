@@ -4,7 +4,7 @@ function getApiUrl(): string {
   const apiUrl = process.env.NEXT_PUBLIC_API_URL?.trim();
 
   if (!apiUrl) {
-    throw new Error('Thiếu biến môi trường NEXT_PUBLIC_API_URL cho frontend.');
+    return '';
   }
 
   return apiUrl.replace(/\/+$/, '');

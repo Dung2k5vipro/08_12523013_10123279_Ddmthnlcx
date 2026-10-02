@@ -92,10 +92,16 @@ export async function apiRequest<T>(
 
   try {
     const apiUrl = env.NEXT_PUBLIC_API_URL;
-    const requestPath = apiUrl.endsWith('/api') && path.startsWith('/api/')
-      ? path.slice('/api'.length)
-      : path;
-    const response = await fetch(`${apiUrl}${requestPath}`, {
+    let targetUrl: string;
+    if (!apiUrl) {
+      targetUrl = path.startsWith('/') ? path : `/${path}`;
+    } else {
+      const requestPath = apiUrl.endsWith('/api') && path.startsWith('/api/')
+        ? path.slice('/api'.length)
+        : (path.startsWith('/') ? path : `/${path}`);
+      targetUrl = `${apiUrl}${requestPath}`;
+    }
+    const response = await fetch(targetUrl, {
       method,
       headers: {
         'Content-Type': 'application/json',

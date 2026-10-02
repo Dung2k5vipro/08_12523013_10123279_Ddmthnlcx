@@ -31,5 +31,5 @@ COPY --from=build --chown=nextjs:nodejs /app/public ./public
 USER nextjs
 EXPOSE 3000
 HEALTHCHECK --interval=30s --timeout=5s --start-period=20s --retries=3 \
-	CMD node -e "fetch('http://127.0.0.1:3000').then((response) => process.exit(response.ok ? 0 : 1)).catch(() => process.exit(1))"
+	CMD node -e "const http = require('http'); const tryReq = (host) => new Promise((resolve, reject) => { const req = http.get({ host, port: 3000, timeout: 3000 }, (res) => resolve(res.statusCode >= 200 && res.statusCode < 400)); req.on('error', reject); req.on('timeout', () => { req.destroy(); reject(new Error('timeout')); }); }); Promise.any(['0.0.0.0', '127.0.0.1', 'localhost'].map(tryReq)).then((ok) => process.exit(ok ? 0 : 1)).catch(() => process.exit(1));"
 CMD ["node", "server.js"]
